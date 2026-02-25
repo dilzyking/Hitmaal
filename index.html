@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TDXFlix</title>
+
+<style>
+body{
+    margin:0;
+    background:#0f0f0f;
+    font-family:Arial, sans-serif;
+    color:#fff;
+}
+
+header{
+    padding:20px;
+    text-align:center;
+    font-size:24px;
+    font-weight:bold;
+    background:#111;
+    border-bottom:1px solid #222;
+}
+
+/* 🎬 Player Section */
+.player-section{
+    width:100%;
+    max-width:1000px;
+    margin:20px auto;
+    display:none;
+}
+
+.player-container{
+    width:100%;
+    aspect-ratio:16/9;
+    background:#000;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+iframe{
+    width:100%;
+    height:100%;
+    border:none;
+}
+
+/* 🎞 Grid */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+    gap:18px;
+    padding:20px;
+}
+
+.card{
+    background:#1a1a1a;
+    border-radius:12px;
+    overflow:hidden;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.poster{
+    width:100%;
+    aspect-ratio:16/9;
+    object-fit:cover;
+    display:block;
+}
+
+.content{
+    padding:12px;
+}
+
+.title{
+    font-size:15px;
+    font-weight:bold;
+    margin-bottom:6px;
+}
+
+.duration{
+    font-size:13px;
+    color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>TDXFlix Videos</header>
+
+<!-- 🎬 Embedded Player -->
+<div class="player-section" id="playerSection">
+    <div class="player-container">
+        <iframe id="videoFrame"
+            sandbox="allow-scripts allow-same-origin allow-forms allow-presentation"
+            allowfullscreen>
+        </iframe>
+    </div>
+</div>
+
+<!-- 🎞 Video Grid -->
+<div class="grid" id="videoGrid"></div>
+
+<script>
+
+async function loadVideos() {
+    const response = await fetch("https://tdflix-i9d.pages.dev/tdxflix.json");
+    const data = await response.json();
+    const videos = data.videos;
+    const grid = document.getElementById("videoGrid");
+
+    videos.forEach(video => {
+
+        const card = document.createElement("div");
+        card.className = "card";
+
+        card.innerHTML = `
+            <img class="poster" src="${video.main_thumb}" alt="${video.alt_text}">
+            <div class="content">
+                <div class="title">${video.display_title}</div>
+                <div class="duration">${video.duration || ""}</div>
+            </div>
+        `;
+
+        card.onclick = () => {
+            if(video.player_url){
+                const playerSection = document.getElementById("playerSection");
+                const frame = document.getElementById("videoFrame");
+
+                frame.src = video.player_url;  // ✅ USING PLAYER PAGE
+                playerSection.style.display = "block";
+
+                playerSection.scrollIntoView({behavior:"smooth"});
+            }
+        };
+
+        grid.appendChild(card);
+    });
+}
+
+loadVideos();
+
+</script>
+
+</body>
+</html>
