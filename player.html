@@ -61,7 +61,13 @@ iframe{
 </div>
 
 <div class="player-container">
-    <iframe id="playerFrame" allowfullscreen></iframe>
+    <iframe 
+    id="playerFrame"
+    sandbox="allow-scripts allow-same-origin allow-presentation"
+    allow="fullscreen; autoplay; encrypted-media"
+    referrerpolicy="no-referrer"
+    allowfullscreen>
+    </iframe>
 </div>
 
 <script>
