@@ -116,7 +116,7 @@ if __name__ == "__main__":
     print(json.dumps(data, indent=2))
 
     # 💾 Save file
-    with open("output.json", "w") as f:
+    with open("api/desihub.json", "w") as f:
         json.dump(data, f, indent=2)
 
-    print("\n💾 Saved to output.json")
+    print("\n💾 Saved to api/desihub.json")
