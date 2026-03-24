@@ -13,8 +13,12 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0"
 }
 
-# 🔹 Clean title (safe words)
+# 🔹 Clean title
 def clean_title(text):
+    # remove "Featured image for"
+    text = re.sub(r"^Featured image for\s*", "", text, flags=re.IGNORECASE)
+
+    # remove unwanted words
     banned = [
         "fucked", "sex", "pussy", "blowjob",
         "xxx", "porn", "nude", "adult", "explicit",
@@ -22,8 +26,9 @@ def clean_title(text):
     ]
 
     for word in banned:
-        text = re.sub(word, "video", text, flags=re.IGNORECASE)
+        text = re.sub(word, "", text, flags=re.IGNORECASE)
 
+    # remove extra spaces
     return re.sub(r"\s+", " ", text).strip()
 
 
@@ -102,7 +107,7 @@ def scrape_page(url):
     return results
 
 
-# 🔥 Main scraper
+# 🔥 Scrape all pages
 def scrape_all():
     all_data = []
 
@@ -125,10 +130,10 @@ if __name__ == "__main__":
     try:
         data = scrape_all()
 
-        # 🔥 create api folder
+        # create api folder
         os.makedirs("api", exist_ok=True)
 
-        # 🔥 save JSON safely
+        # save JSON
         with open("api/desihub.json", "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
 
