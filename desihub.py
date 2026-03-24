@@ -4,19 +4,28 @@ import re
 import urllib.parse
 import json
 import time
+import os
 
 BASE_URL = "https://desihub.org"
-TOTAL_PAGES = 10   # 🔥 number of pages
+TOTAL_PAGES = 10
 
-# 🔹 Clean title
+HEADERS = {
+    "User-Agent": "Mozilla/5.0"
+}
+
+# 🔹 Clean title (safe words)
 def clean_title(text):
     banned = [
         "fucked", "sex", "pussy", "blowjob",
-        "xxx", "porn", "nude", "adult", "explicit"
+        "xxx", "porn", "nude", "adult", "explicit",
+        "dick", "boob", "masturbating", "sucking"
     ]
+
     for word in banned:
         text = re.sub(word, "video", text, flags=re.IGNORECASE)
+
     return re.sub(r"\s+", " ", text).strip()
+
 
 # 🔹 Decode Next.js image URL
 def get_real_image(src):
@@ -28,10 +37,11 @@ def get_real_image(src):
     except:
         return src
 
+
 # 🔹 Get embed link
 def get_embed(page_url):
     try:
-        res = requests.get(page_url, headers={"User-Agent": "Mozilla/5.0"})
+        res = requests.get(page_url, headers=HEADERS, timeout=10)
         soup = BeautifulSoup(res.text, "html.parser")
 
         iframe = soup.find("iframe")
@@ -45,49 +55,54 @@ def get_embed(page_url):
                 return source["src"]
 
         return None
-    except:
+
+    except Exception as e:
+        print("❌ Embed error:", e)
         return None
+
 
 # 🔹 Scrape one page
 def scrape_page(url):
-    headers = {"User-Agent": "Mozilla/5.0"}
-    res = requests.get(url, headers=headers)
-    soup = BeautifulSoup(res.text, "html.parser")
-
     results = []
 
-    for img in soup.find_all("img"):
-        alt = img.get("alt")
-        src = img.get("src")
+    try:
+        res = requests.get(url, headers=HEADERS, timeout=10)
+        soup = BeautifulSoup(res.text, "html.parser")
 
-        if not alt or not src:
-            continue
+        for img in soup.find_all("img"):
+            alt = img.get("alt")
+            src = img.get("src")
 
-        title = clean_title(alt)
-        image = get_real_image(src)
+            if not alt or not src:
+                continue
 
-        parent = img.find_parent("a")
-        if parent and parent.get("href"):
-            page_url = BASE_URL + parent.get("href")
+            title = clean_title(alt)
+            image = get_real_image(src)
 
-            embed = get_embed(page_url)
+            parent = img.find_parent("a")
+            if parent and parent.get("href"):
+                page_url = BASE_URL + parent.get("href")
 
-            results.append({
-                "title": title,
-                "image": image,
-                "page": page_url,
-                "embed": embed
-            })
+                embed = get_embed(page_url)
 
-            print("✅", title)
+                results.append({
+                    "title": title,
+                    "image": image,
+                    "page": page_url,
+                    "embed": embed
+                })
 
-            # 🔥 small delay (avoid blocking)
-            time.sleep(0.5)
+                print("✅", title)
+
+                time.sleep(0.3)
+
+    except Exception as e:
+        print("❌ Page error:", e)
 
     return results
 
 
-# 🔥 Main scraper with pagination
+# 🔥 Main scraper
 def scrape_all():
     all_data = []
 
@@ -99,24 +114,25 @@ def scrape_all():
         else:
             url = f"{BASE_URL}/page/{page}"
 
-        try:
-            page_data = scrape_page(url)
-            all_data.extend(page_data)
-        except Exception as e:
-            print("❌ Error on page", page, ":", e)
+        data = scrape_page(url)
+        all_data.extend(data)
 
     return all_data
 
 
-# ▶️ Run
+# ▶️ RUN
 if __name__ == "__main__":
-    data = scrape_all()
+    try:
+        data = scrape_all()
 
-    print("\n🔥 Final JSON Output:\n")
-    print(json.dumps(data, indent=2))
+        # 🔥 create api folder
+        os.makedirs("api", exist_ok=True)
 
-    # 💾 Save file
-    with open("api/desihub.json", "w") as f:
-        json.dump(data, f, indent=2)
+        # 🔥 save JSON safely
+        with open("api/desihub.json", "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
 
-    print("\n💾 Saved to api/desihub.json")
+        print("\n💾 Saved to api/desihub.json")
+
+    except Exception as e:
+        print("❌ Fatal Error:", e)
