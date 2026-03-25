@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<!-- PRIMARY SEO -->
+<title>Watch Hot Webseries Online HD - Hitmaal Premium Player</title>
+<meta name="description" content="Stream hot webseries, ullu webseries, and premium model videos in crystal clear HD. Watch now on Hitmaal's advanced video player with zero buffering.">
+<meta name="keywords" content="watch hot webseries, ullu webseries player, stream model videos, hitmaal player, free web series">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://hitmaal.in/player.html">
+
+<!-- OPEN GRAPH -->
+<meta property="og:title" content="Watch Hot Webseries HD - Hitmaal Player">
+<meta property="og:description" content="Premium video player for hot webseries, ullu originals, and model videos. Stream in HD quality.">
+<meta property="og:type" content="video.other">
+<meta property="og:url" content="https://hitmaal.in/player.html">
+<meta property="og:image" content="https://hitmaal.in/player-preview.jpg">
+
+<!-- TWITTER -->
+<meta name="twitter:card" content="player">
+<meta name="twitter:title" content="Watch Hot Webseries HD - Hitmaal">
+<meta name="twitter:description" content="Stream premium adult content in stunning HD.">
+
+<!-- PERFORMANCE -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!-- HLS.js for better streaming support -->
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.12/dist/hls.min.js"></script>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #050507;
+    background-image: radial-gradient(circle at 20% 30%, rgba(30, 30, 55, 0.4) 0%, #020203 98%);
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Premium video container */
+  .video-wrapper {
+    position: relative;
+    background: #000;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(99, 102, 241, 0.2);
+  }
+  
+  #videoPlayer {
+    width: 100%;
+    height: auto;
+    background: #000;
+    cursor: pointer;
+  }
+  
+  /* Custom controls */
+  .video-controls {
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.6) 60%, transparent 100%);
+    backdrop-filter: blur(8px);
+    transition: opacity 0.3s ease;
+  }
+  
+  .control-btn {
+    transition: all 0.2s ease;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    cursor: pointer;
+  }
+  
+  .control-btn:hover {
+    background: rgba(99, 102, 241, 0.8);
+    transform: scale(1.05);
+  }
+  
+  .progress-bar {
+    flex: 1;
+    height: 4px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border-radius: 4px;
+    width: 0%;
+    position: relative;
+  }
+  
+  .progress-fill::after {
+    content: '';
+    position: absolute;
+    right: -4px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #667eea;
+  }
+  
+  /* Premium cards for watch more */
+  .watch-card {
+    background: rgba(12, 12, 18, 0.7);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 18px;
+    transition: all 0.35s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .watch-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(99, 102, 241, 0.4);
+    box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(99, 102, 241, 0.2);
+  }
+  
+  .watch-card-thumb {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    background: #0a0a0f;
+  }
+  
+  .watch-card-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+  
+  .watch-card:hover .watch-card-thumb img {
+    transform: scale(1.05);
+  }
+  
+  .play-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .watch-card:hover .play-overlay {
+    opacity: 1;
+  }
+  
+  .play-overlay i {
+    background: rgba(99, 102, 241, 0.9);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    transform: scale(0.9);
+    transition: transform 0.2s;
+  }
+  
+  .watch-card:hover .play-overlay i {
+    transform: scale(1);
+  }
+  
+  .duration-badge-sm {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(4px);
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-family: monospace;
+  }
+  
+  /* Loading spinner */
+  .loading-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px;
+    border: 3px solid rgba(255,255,255,0.2);
+    border-top-color: #667eea;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    display: none;
+  }
+  
+  @keyframes spin {
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+  
+  /* Gradient text */
+  .gradient-text {
+    background: linear-gradient(135deg, #FFFFFF, #C084FC, #60A5FA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 5px;
+    background: #0f0f12;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 10px;
+  }
+</style>
+</head>
+<body class="text-white">
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 px-5 md:px-8 py-4 bg-black/50 backdrop-blur-xl border-b border-white/10">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <a href="/" class="flex items-center gap-2 group">
+      <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-600 flex items-center justify-center shadow-lg">
+        <i class="fas fa-bolt text-white text-lg"></i>
+      </div>
+      <span class="text-xl md:text-2xl font-extrabold tracking-tight gradient-text">HITMAAL</span>
+    </a>
+    <a href="/" class="text-sm text-gray-300 hover:text-white transition flex items-center gap-2 bg-white/5 px-4 py-2 rounded-full">
+      <i class="fas fa-arrow-left text-indigo-400"></i>
+      <span>Back to Home</span>
+    </a>
+  </div>
+</header>
+
+<main class="max-w-7xl mx-auto px-4 md:px-6 py-6 md:py-8">
+  
+  <!-- Video Player Section -->
+  <div class="grid lg:grid-cols-3 gap-8">
+    <!-- Main Video Column -->
+    <div class="lg:col-span-2">
+      <div class="video-wrapper relative">
+        <video id="videoPlayer" class="w-full" poster="" controlsList="nodownload" playsinline>
+          <source src="" type="video/mp4">
+        </video>
+        
+        <!-- Custom Controls (Enhanced) -->
+        <div id="controls" class="video-controls absolute bottom-0 left-0 right-0 p-4 opacity-0 transition-opacity duration-300">
+          <div class="progress-bar mb-3" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <div class="flex items-center justify-between gap-3">
+            <div class="flex items-center gap-2">
+              <div class="control-btn" id="playPauseBtn">
+                <i class="fas fa-play text-sm"></i>
+              </div>
+              <div class="control-btn" id="muteBtn">
+                <i class="fas fa-volume-up text-sm"></i>
+              </div>
+              <span class="text-xs font-mono bg-black/50 px-2 py-1 rounded" id="timeDisplay">0:00 / 0:00</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="control-btn" id="fullscreenBtn">
+                <i class="fas fa-expand text-sm"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="loading-spinner" id="loadingSpinner"></div>
+      </div>
+      
+      <!-- Video Info -->
+      <div class="mt-6 space-y-4" id="videoInfo">
+        <h1 id="videoTitle" class="text-2xl md:text-3xl font-bold tracking-tight">Loading...</h1>
+        <div class="flex flex-wrap gap-4 text-sm text-gray-400">
+          <span id="uploadTime" class="flex items-center gap-2"><i class="far fa-calendar-alt text-indigo-400"></i> </span>
+          <span id="videoDuration" class="flex items-center gap-2"><i class="far fa-clock text-indigo-400"></i> </span>
+          <span class="flex items-center gap-2"><i class="fas fa-hd text-indigo-400"></i> Premium HD</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Sidebar - Watch More -->
+    <div class="lg:col-span-1">
+      <div class="sticky top-24">
+        <div class="flex items-center justify-between mb-5">
+          <h2 class="text-xl font-bold flex items-center gap-2">
+            <i class="fas fa-fire text-orange-500"></i>
+            <span class="gradient-text">Watch More</span>
+          </h2>
+          <span class="text-xs text-gray-500 bg-white/5 px-3 py-1 rounded-full">Daily Updates</span>
+        </div>
+        
+        <div id="watchMoreGrid" class="space-y-4 max-h-[70vh] overflow-y-auto pr-2 custom-scroll">
+          <!-- Dynamic content loads here -->
+          <div class="flex justify-center py-8">
+            <i class="fas fa-spinner fa-spin text-indigo-400 text-2xl"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- SEO Description -->
+  <div class="mt-12 pt-6 border-t border-white/10 text-gray-400 text-sm">
+    <p>Watch the latest hot webseries, ullu webseries, and premium model videos in stunning HD quality. Hitmaal offers the best streaming experience with zero buffering and daily updates. Explore more exclusive content below.</p>
+  </div>
+</main>
+
+<script>
+const API_URL = "https://hitmaal.in/m3u8.json";
+
+// Get URL parameters
+const urlParams = new URLSearchParams(window.location.search);
+let currentVideoUrl = urlParams.get('video');
+let currentTitle = urlParams.get('title') || 'Hot Webseries';
+let currentTime = urlParams.get('time') || 'New Release';
+let currentDur = urlParams.get('dur') || 'HD';
+
+// DOM Elements
+const video = document.getElementById('videoPlayer');
+const controls = document.getElementById('controls');
+const playPauseBtn = document.getElementById('playPauseBtn');
+const muteBtn = document.getElementById('muteBtn');
+const progressBar = document.getElementById('progressBar');
+const progressFill = document.getElementById('progressFill');
+const timeDisplay = document.getElementById('timeDisplay');
+const fullscreenBtn = document.getElementById('fullscreenBtn');
+const loadingSpinner = document.getElementById('loadingSpinner');
+const videoTitle = document.getElementById('videoTitle');
+const uploadTimeSpan = document.getElementById('uploadTime');
+const videoDurationSpan = document.getElementById('videoDuration');
+const watchMoreGrid = document.getElementById('watchMoreGrid');
+
+let controlsTimeout;
+let isPlaying = false;
+let isMuted = false;
+
+// Format time (seconds to mm:ss)
+function formatTime(seconds) {
+  if (isNaN(seconds)) return "0:00";
+  const mins = Math.floor(seconds / 60);
+  const secs = Math.floor(seconds % 60);
+  return `${mins}:${secs.toString().padStart(2, '0')}`;
+}
+
+// Update time display
+function updateTimeDisplay() {
+  const current = formatTime(video.currentTime);
+  const total = formatTime(video.duration || 0);
+  timeDisplay.textContent = `${current} / ${total}`;
+}
+
+// Update progress bar
+function updateProgress() {
+  if (video.duration) {
+    const percent = (video.currentTime / video.duration) * 100;
+    progressFill.style.width = `${percent}%`;
+  }
+  updateTimeDisplay();
+}
+
+// Toggle play/pause
+function togglePlay() {
+  if (video.paused) {
+    video.play();
+    playPauseBtn.innerHTML = '<i class="fas fa-pause text-sm"></i>';
+    isPlaying = true;
+  } else {
+    video.pause();
+    playPauseBtn.innerHTML = '<i class="fas fa-play text-sm"></i>';
+    isPlaying = false;
+  }
+}
+
+// Toggle mute
+function toggleMute() {
+  video.muted = !video.muted;
+  isMuted = video.muted;
+  muteBtn.innerHTML = isMuted ? '<i class="fas fa-volume-mute text-sm"></i>' : '<i class="fas fa-volume-up text-sm"></i>';
+}
+
+// Seek to position
+function seek(e) {
+  const rect = progressBar.getBoundingClientRect();
+  const clickX = e.clientX - rect.left;
+  const width = rect.width;
+  const seekTime = (clickX / width) * video.duration;
+  video.currentTime = seekTime;
+}
+
+// Fullscreen
+function toggleFullscreen() {
+  if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen();
+    fullscreenBtn.innerHTML = '<i class="fas fa-compress text-sm"></i>';
+  } else {
+    document.exitFullscreen();
+    fullscreenBtn.innerHTML = '<i class="fas fa-expand text-sm"></i>';
+  }
+}
+
+// Show controls temporarily
+function showControls() {
+  controls.style.opacity = '1';
+  clearTimeout(controlsTimeout);
+  controlsTimeout = setTimeout(() => {
+    if (!video.paused) {
+      controls.style.opacity = '0';
+    }
+  }, 2500);
+}
+
+// Load video with HLS support
+function loadVideo(url, title, uploadTime, duration) {
+  loadingSpinner.style.display = 'block';
+  videoTitle.textContent = title || 'Hot Webseries';
+  uploadTimeSpan.innerHTML = `<i class="far fa-calendar-alt text-indigo-400"></i> ${uploadTime || 'New Release'}`;
+  videoDurationSpan.innerHTML = `<i class="far fa-clock text-indigo-400"></i> ${duration || 'HD'}`;
+  
+  // Clear previous source
+  video.removeAttribute('src');
+  video.load();
+  
+  // Check if HLS stream
+  if (url.includes('.m3u8')) {
+    if (Hls.isSupported()) {
+      const hls = new Hls();
+      hls.loadSource(url);
+      hls.attachMedia(video);
+      hls.on(Hls.Events.MANIFEST_PARSED, () => {
+        loadingSpinner.style.display = 'none';
+        video.play().catch(e => console.log('Autoplay blocked'));
+        playPauseBtn.innerHTML = '<i class="fas fa-pause text-sm"></i>';
+        isPlaying = true;
+      });
+      hls.on(Hls.Events.ERROR, () => {
+        loadingSpinner.style.display = 'none';
+      });
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      video.src = url;
+      video.addEventListener('loadedmetadata', () => {
+        loadingSpinner.style.display = 'none';
+        video.play().catch(e => console.log('Autoplay blocked'));
+      });
+    }
+  } else {
+    // Regular MP4
+    video.src = url;
+    video.addEventListener('loadedmetadata', () => {
+      loadingSpinner.style.display = 'none';
+      video.play().catch(e => console.log('Autoplay blocked'));
+      playPauseBtn.innerHTML = '<i class="fas fa-pause text-sm"></i>';
+      isPlaying = true;
+    });
+  }
+  
+  video.addEventListener('ended', () => {
+    playPauseBtn.innerHTML = '<i class="fas fa-play text-sm"></i>';
+    isPlaying = false;
+  });
+}
+
+// Event listeners
+video.addEventListener('timeupdate', () => {
+  updateProgress();
+  showControls();
+});
+
+video.addEventListener('play', () => {
+  playPauseBtn.innerHTML = '<i class="fas fa-pause text-sm"></i>';
+  isPlaying = true;
+  showControls();
+});
+
+video.addEventListener('pause', () => {
+  playPauseBtn.innerHTML = '<i class="fas fa-play text-sm"></i>';
+  isPlaying = false;
+  controls.style.opacity = '1';
+});
+
+video.addEventListener('click', togglePlay);
+video.addEventListener('mousemove', showControls);
+video.addEventListener('mouseleave', () => {
+  if (!video.paused) {
+    controls.style.opacity = '0';
+  }
+});
+
+playPauseBtn.addEventListener('click', togglePlay);
+muteBtn.addEventListener('click', toggleMute);
+progressBar.addEventListener('click', seek);
+fullscreenBtn.addEventListener('click', toggleFullscreen);
+
+document.addEventListener('fullscreenchange', () => {
+  if (document.fullscreenElement) {
+    fullscreenBtn.innerHTML = '<i class="fas fa-compress text-sm"></i>';
+  } else {
+    fullscreenBtn.innerHTML = '<i class="fas fa-expand text-sm"></i>';
+  }
+});
+
+// Load initial video if URL provided
+if (currentVideoUrl) {
+  loadVideo(currentVideoUrl, currentTitle, currentTime, currentDur);
+} else {
+  // Fallback: load first video from API
+  fetch(API_URL)
+    .then(res => res.json())
+    .then(data => {
+      if (data.videos && data.videos[0]) {
+        const first = data.videos[0];
+        loadVideo(first.stream_url, first.title, first.upload_time, first.duration);
+      }
+    });
+}
+
+// ========== WATCH MORE SECTION - FETCH FROM SAME API ==========
+function loadWatchMore(currentVideoId = null) {
+  fetch(API_URL)
+    .then(res => res.json())
+    .then(data => {
+      const videos = data.videos || [];
+      if (videos.length === 0) {
+        watchMoreGrid.innerHTML = '<div class="text-center py-8 text-gray-500"><i class="fas fa-video-slash text-2xl mb-2"></i><p>More videos coming soon</p></div>';
+        return;
+      }
+      
+      // Filter out current video if needed (by URL comparison)
+      let filteredVideos = videos;
+      if (currentVideoUrl) {
+        filteredVideos = videos.filter(v => v.stream_url !== currentVideoUrl);
+      }
+      
+      // Take first 8 videos for watch more
+      const watchVideos = filteredVideos.slice(0, 8);
+      
+      if (watchVideos.length === 0) {
+        watchMoreGrid.innerHTML = '<div class="text-center py-8 text-gray-500"><i class="fas fa-play-circle text-2xl mb-2"></i><p>Explore other videos</p></div>';
+        return;
+      }
+      
+      watchMoreGrid.innerHTML = '';
+      
+      watchVideos.forEach(video => {
+        const card = document.createElement('div');
+        card.className = 'watch-card';
+        
+        const durationDisplay = video.duration || 'HD';
+        const title = video.title || 'Hot Webseries';
+        const thumb = video.thumbnail || 'https://via.placeholder.com/640x360/1a1a2e/ffffff?text=Hitmaal';
+        
+        card.innerHTML = `
+          <div class="watch-card-thumb">
+            <img src="${thumb}" alt="${escapeHtml(title)}" loading="lazy">
+            <div class="play-overlay">
+              <i class="fas fa-play"></i>
+            </div>
+            <div class="duration-badge-sm">
+              <i class="far fa-clock text-[10px]"></i> ${durationDisplay}
+            </div>
+          </div>
+          <div class="p-3">
+            <h3 class="font-semibold text-sm line-clamp-2 text-white">${escapeHtml(title)}</h3>
+            <p class="text-xs text-gray-400 mt-1 flex items-center gap-1">
+              <i class="far fa-calendar-alt text-indigo-400 text-[10px]"></i>
+              ${escapeHtml(video.upload_time || 'New')}
+            </p>
+          </div>
+        `;
+        
+        card.addEventListener('click', () => {
+          // Load new video without page reload
+          currentVideoUrl = video.stream_url;
+          currentTitle = video.title;
+          currentTime = video.upload_time;
+          currentDur = video.duration;
+          
+          // Update URL without reload (for sharing)
+          const newUrl = `player.html?video=${encodeURIComponent(video.stream_url)}&title=${encodeURIComponent(video.title)}&time=${video.upload_time}&dur=${video.duration}`;
+          window.history.pushState({}, '', newUrl);
+          
+          // Load new video
+          loadVideo(video.stream_url, video.title, video.upload_time, video.duration);
+          
+          // Refresh watch more to update current selection
+          loadWatchMore(video.stream_url);
+          
+          // Scroll to top smoothly
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        watchMoreGrid.appendChild(card);
+      });
+    })
+    .catch(error => {
+      console.error('Failed to load watch more:', error);
+      watchMoreGrid.innerHTML = '<div class="text-center py-8 text-gray-500"><i class="fas fa-exclamation-triangle"></i><p class="mt-2">Failed to load recommendations</p></div>';
+    });
+}
+
+// Helper function to escape HTML
+function escapeHtml(str) {
+  if (!str) return '';
+  return str.replace(/[&<>]/g, function(m) {
+    if (m === '&') return '&amp;';
+    if (m === '<') return '&lt;';
+    if (m === '>') return '&gt;';
+    return m;
+  });
+}
+
+// Load watch more on page load
+loadWatchMore();
+
+// Handle back/forward navigation
+window.addEventListener('popstate', () => {
+  const newParams = new URLSearchParams(window.location.search);
+  const newVideoUrl = newParams.get('video');
+  const newTitle = newParams.get('title') || 'Hot Webseries';
+  const newTime = newParams.get('time') || 'New Release';
+  const newDur = newParams.get('dur') || 'HD';
+  
+  if (newVideoUrl) {
+    currentVideoUrl = newVideoUrl;
+    loadVideo(newVideoUrl, newTitle, newTime, newDur);
+    loadWatchMore(newVideoUrl);
+  }
+});
+
+// Keyboard shortcuts
+document.addEventListener('keydown', (e) => {
+  if (e.code === 'Space') {
+    e.preventDefault();
+    togglePlay();
+  } else if (e.code === 'ArrowLeft') {
+    e.preventDefault();
+    video.currentTime = Math.max(0, video.currentTime - 10);
+    showControls();
+  } else if (e.code === 'ArrowRight') {
+    e.preventDefault();
+    video.currentTime = Math.min(video.duration, video.currentTime + 10);
+    showControls();
+  } else if (e.code === 'KeyM') {
+    toggleMute();
+  } else if (e.code === 'KeyF') {
+    toggleFullscreen();
+  }
+});
+</script>
+</body>
+</html>
