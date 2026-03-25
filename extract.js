@@ -2,7 +2,7 @@ import { chromium } from "playwright";
 import fs from "fs";
 
 const SOURCE_JSON =
-  "https://raw.githubusercontent.com/cricstreamz745/Hit-Maal/refs/heads/main/hitmall.json";
+  "https://hitmaal.in/hitmall.json";
 
 const OUTPUT = "m3u8.json";
 
