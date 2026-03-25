@@ -159,7 +159,7 @@ async function loadVideos() {
         `;
 
         card.onclick = () => {
-            window.location.href = `catagory/player.html?url=${encodeURIComponent(video.player_url)}&title=${encodeURIComponent(video.display_title)}`;
+            window.location.href = `player.html?url=${encodeURIComponent(video.player_url)}&title=${encodeURIComponent(video.display_title)}`;
         };
 
         grid.appendChild(card);
