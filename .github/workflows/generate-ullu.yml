@@ -21,7 +21,7 @@ jobs:
 
       - name: Generate Pages
         run: |
-          mkdir -p ullu
+          mkdir -p webseries
           mkdir -p api
 
           # ── Keep only the latest 200 videos ──────────────────
@@ -38,10 +38,10 @@ jobs:
           done
 
           # ── Delete pages no longer in the latest 200 ─────────
-          for existing_file in ullu/*.html; do
+          for existing_file in webseries/*.html; do
             [ -f "$existing_file" ] || continue
             # Skip the template itself
-            [ "$existing_file" = "ullu/template.html" ] && continue
+            [ "$existing_file" = "webseries/template.html" ] && continue
 
             existing_slug=$(basename "$existing_file" .html)
             found=false
@@ -70,14 +70,14 @@ jobs:
             slug=$(echo "$title" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g')
             file="webseries/$slug.html"
 
-            cp ullu/template.html "$file"
+            cp webseries/template.html "$file"
 
             sed -i "s|{{title}}|$title|g" "$file"
             sed -i "s|{{thumbnail}}|$thumb|g" "$file"
             sed -i "s|{{duration}}|$duration|g" "$file"
             sed -i "s|{{stream_url}}|$stream|g" "$file"
 
-            # Add to API (latest 200, newest last)
+            # Add to API
             jq --arg title "$title" \
                --arg thumb "$thumb" \
                --arg duration "$duration" \
@@ -86,7 +86,7 @@ jobs:
                  "title": $title,
                  "thumbnail": $thumb,
                  "duration": $duration,
-                 "page": ("/ullu/" + $slug + ".html")
+                 "page": ("/webseries/" + $slug + ".html")
                }]' api/data.json > tmp.json && mv tmp.json api/data.json
 
           done
