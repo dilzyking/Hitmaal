@@ -24,18 +24,50 @@ jobs:
           mkdir -p ullu
           mkdir -p api
 
+          # ── Keep only the latest 200 videos ──────────────────
+          jq '{videos: (.videos | .[-200:])}' data.json > data_trimmed.json
+
+          count=$(jq '.videos | length' data_trimmed.json)
+
+          # ── Build set of slugs that SHOULD exist ─────────────
+          VALID_SLUGS=()
+          for i in $(seq 0 $(($count - 1))); do
+            title=$(jq -r ".videos[$i].title" data_trimmed.json)
+            slug=$(echo "$title" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g')
+            VALID_SLUGS+=("$slug")
+          done
+
+          # ── Delete pages no longer in the latest 200 ─────────
+          for existing_file in ullu/*.html; do
+            [ -f "$existing_file" ] || continue
+            # Skip the template itself
+            [ "$existing_file" = "ullu/template.html" ] && continue
+
+            existing_slug=$(basename "$existing_file" .html)
+            found=false
+            for valid in "${VALID_SLUGS[@]}"; do
+              if [ "$existing_slug" = "$valid" ]; then
+                found=true
+                break
+              fi
+            done
+
+            if [ "$found" = false ]; then
+              echo "Removing stale page: $existing_file"
+              git rm --force "$existing_file" 2>/dev/null || rm -f "$existing_file"
+            fi
+          done
+
+          # ── Generate / refresh pages and API ─────────────────
           echo "[]" > api/data.json
 
-          count=$(jq '.videos | length' data.json)
-
           for i in $(seq 0 $(($count - 1))); do
-            title=$(jq -r ".videos[$i].title" data.json)
-            thumb=$(jq -r ".videos[$i].thumbnail" data.json)
-            duration=$(jq -r ".videos[$i].duration" data.json)
-            stream=$(jq -r ".videos[$i].stream_url" data.json)
+            title=$(jq -r ".videos[$i].title" data_trimmed.json)
+            thumb=$(jq -r ".videos[$i].thumbnail" data_trimmed.json)
+            duration=$(jq -r ".videos[$i].duration" data_trimmed.json)
+            stream=$(jq -r ".videos[$i].stream_url" data_trimmed.json)
 
             slug=$(echo "$title" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g')
-
             file="ullu/$slug.html"
 
             cp ullu/template.html "$file"
@@ -45,20 +77,27 @@ jobs:
             sed -i "s|{{duration}}|$duration|g" "$file"
             sed -i "s|{{stream_url}}|$stream|g" "$file"
 
-            # Add to API
-            jq ". + [{
-              \"title\": \"$title\",
-              \"thumbnail\": \"$thumb\",
-              \"duration\": \"$duration\",
-              \"page\": \"/ullu/$slug.html\"
-            }]" api/data.json > tmp.json && mv tmp.json api/data.json
+            # Add to API (latest 200, newest last)
+            jq --arg title "$title" \
+               --arg thumb "$thumb" \
+               --arg duration "$duration" \
+               --arg slug "$slug" \
+               '. + [{
+                 "title": $title,
+                 "thumbnail": $thumb,
+                 "duration": $duration,
+                 "page": ("/ullu/" + $slug + ".html")
+               }]' api/data.json > tmp.json && mv tmp.json api/data.json
 
           done
+
+          # Cleanup temp file
+          rm -f data_trimmed.json
 
       - name: Commit & Push
         run: |
           git config --global user.name "bot"
           git config --global user.email "bot@example.com"
           git add .
-          git commit -m "Auto generate pages" || echo "No changes"
+          git commit -m "Auto generate pages [$(date -u '+%Y-%m-%d %H:%M')] — max 200 videos" || echo "No changes"
           git push
