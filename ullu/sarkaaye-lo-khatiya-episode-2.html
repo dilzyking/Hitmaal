@@ -517,8 +517,8 @@ body {
     <!-- ── LEFT: Player + Info ──────────────────────────────── -->
     <div class="player-main">
       <div class="player-shell">
-        <video id="player" playsinline controls data-poster="">
-          <source src="" type="video/mp4">
+        <video id="player" playsinline controls autoplay poster="https://hmaal.net/wp-content/uploads/2025/04/Sarkaaye-Lo-Khatiya-Episode-2.webp">
+  <source src="https://cdn.bmaal.com/ULLU/Sarkaaye Lo Khatiya/Sarkaaye Lo Khatiya Episode 2.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256{{stream_url}}X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2/20260322/auto/s3/aws4_request{{stream_url}}X-Amz-Date=20260322T055414Z{{stream_url}}X-Amz-Expires=604800{{stream_url}}X-Amz-SignedHeaders=host{{stream_url}}X-Amz-Signature=e8817bc7c4c94d73acc8ab0d9e7a8c8cc889233981aa4186ce73e6f910982bda" type="video/mp4">
         </video>
       </div>
 
@@ -586,7 +586,7 @@ body {
 
 <!-- ═══ SCRIPTS ═══════════════════════════════════════════════ -->
 <script>
-const API_URL = "https://hitmaal.in/m3u8.json";
+
 const params  = new URLSearchParams(window.location.search);
 
 let currentUrl   = params.get('video') || '';
@@ -820,7 +820,7 @@ document.addEventListener('visibilitychange', () => {
 initPlyr();
 // Run initial SEO update from URL params immediately (good for direct links / SEO crawlers)
 if (currentTitle !== 'Hot Webseries') updateSEO(currentTitle, currentThumb);
-fetchData();
+
 </script>
 <script>(function(s){s.dataset.zone='10603308',s.src='https://llvpn.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
 </body>
