@@ -68,7 +68,7 @@ jobs:
             stream=$(jq -r ".videos[$i].stream_url" data_trimmed.json)
 
             slug=$(echo "$title" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g')
-            file="ullu/$slug.html"
+            file="webseries/$slug.html"
 
             cp ullu/template.html "$file"
 
