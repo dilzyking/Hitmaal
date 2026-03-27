@@ -17,7 +17,7 @@ from urllib.parse import urljoin
 # CONFIG
 # ==========================
 BASE_URL = "https://hmaal.net/ott/ullu/"
-JSON_FILE = "hitmall.json"
+JSON_FILE = "ullu.json"
 
 HEADERS = {
     "User-Agent": (
