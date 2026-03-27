@@ -681,6 +681,18 @@ footer {
 <script>
 /* ── Comatozer API ── */
 const API_URL = "https://hitmaal-comatozze.sayanwork-studioo.workers.dev/";
+  // 🔥 GET VIDEO FROM LOCALSTORAGE
+const savedVideo = localStorage.getItem("video");
+
+if (savedVideo) {
+  try {
+    const video = JSON.parse(savedVideo);
+    console.log("Loaded from localStorage:", video);
+    loadVideo(video);   // 🚀 THIS PLAYS VIDEO
+  } catch (e) {
+    console.error("Invalid video data");
+  }
+}
 
 const tags = [
   ['Hot','tag-red'],['Webseries','tag-gold'],['Ullu','tag-purple'],
