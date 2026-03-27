@@ -786,10 +786,27 @@ fetch(API_URL)
         </div>`;
 
       /* ── Click → save full video object → go to player ── */
-      const go = () => {
-        localStorage.setItem('video', JSON.stringify(video));
-        window.location.href = 'player.html';
-      };
+      const go = async () => {
+  try {
+    // Step 1: fetch video page / API
+    const res = await fetch(video.page_url); // or video.url if available
+    const text = await res.text();
+
+    // Step 2: extract m3u8 (basic regex)
+    const m3u8 = text.match(/https?:\/\/[^"]+\.m3u8[^"]*/);
+
+    if (m3u8 && m3u8[0]) {
+      // Step 3: open in new tab
+      window.open(m3u8[0], '_blank');
+    } else {
+      alert('M3U8 not found');
+    }
+
+  } catch (err) {
+    console.error(err);
+    alert('Error fetching stream');
+  }
+};
       card.addEventListener('click', go);
       card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') go(); });
 
