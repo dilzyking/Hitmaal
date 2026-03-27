@@ -777,12 +777,10 @@ fetch(API_URL)
       const go = () => {
   if (!video.m3u8) return alert('No stream');
 
-  let url = video.m3u8;
+  // ONLY replace _TPL_
+  const fixedUrl = video.m3u8.replace('_TPL_', 'hls4A');
 
-  // 🔥 FIX TEMPLATE
-  url = url.replace('_TPL_', 'hls4A');
-
-  window.open(url, '_blank');
+  window.open(fixedUrl, '_blank');
 };
       card.addEventListener('click', go);
       card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') go(); });
