@@ -775,9 +775,12 @@ fetch(API_URL)
 
       /* ── Click → save full video object → go to player ── */
       const go = () => {
-        localStorage.setItem('video', JSON.stringify(video));
-        window.location.href = 'player.html';
-      };
+  if (video.m3u8) {
+    window.open(video.m3u8, '_blank');
+  } else {
+    alert('Stream not available');
+  }
+};
       card.addEventListener('click', go);
       card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') go(); });
 
