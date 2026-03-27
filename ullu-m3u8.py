@@ -4,7 +4,7 @@ import fs from "fs";
 const SOURCE_JSON =
   "https://hitmaal.in/ullu.json";
 
-const OUTPUT = "m3u8.json";
+const OUTPUT = "ullu-m3u8.json";
 
 /* 🔥 SPEED CONFIG */
 const MAX_WORKERS = 8;
