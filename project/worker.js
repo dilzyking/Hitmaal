@@ -5,47 +5,42 @@ export default {
     const BASE = "https://video.pat.com/";
 
     try {
-      const response = await fetch(API, {
+      const res = await fetch(API, {
         headers: {
           "User-Agent": "Mozilla/5.0"
         }
       });
 
-      const json = await response.json();
+      const data = await res.json();
 
       const videos = [];
 
-      for (const item of json) {
-
+      for (const item of data) {
         try {
 
-          // ✅ TITLE
+          // 🎬 Title
           const title = item?.file?.data?.[0]?.cd_value || "No Title";
 
-          // ✅ DURATION (formatted)
+          // ⏱ Duration (mm:ss)
           const dur = item?.file?.fl_duration || 0;
           const minutes = Math.floor(dur / 60);
           const seconds = dur % 60;
           const duration = `${minutes}:${seconds.toString().padStart(2, '0')}`;
 
-          // ✅ VIDEO ID
+          // 🆔 Video ID
           const videoId = item?.file?.id || 0;
 
-          // ✅ THUMB
+          // 🖼 Thumbnail
           const thumbId = item?.fc_facts?.[0]?.fc_thumbs?.[0] || 1;
           const thumbnail = videoId
             ? `https://thumbs.externulls.com/videos/${videoId}/${thumbId}.webp?size=480x270`
             : "";
 
-          // ✅ M3U8
-          let m3u8 = "";
+          // 📺 M3U8
           const hlsPath = item?.file?.hls_resources?.fl_cdn_multi;
+          const m3u8 = hlsPath ? BASE + hlsPath + ".m3u8" : "";
 
-          if (hlsPath) {
-            m3u8 = BASE + hlsPath + ".m3u8";
-          }
-
-          // ✅ PUSH ONLY VALID
+          // ✅ Only valid items
           if (videoId && m3u8) {
             videos.push({
               title,
@@ -72,18 +67,15 @@ export default {
         }
       });
 
-    } catch (error) {
-
+    } catch (err) {
       return new Response(JSON.stringify({
         status: false,
-        message: "API Fetch Failed",
-        error: error.toString()
-      }, null, 2), {
+        error: err.toString()
+      }), {
         headers: {
           "Content-Type": "application/json"
         }
       });
-
     }
   }
-}
+};
