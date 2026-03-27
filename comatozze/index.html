@@ -775,11 +775,14 @@ fetch(API_URL)
 
       /* ── Click → save full video object → go to player ── */
       const go = () => {
-  if (video.m3u8) {
-    window.open(video.m3u8, '_blank');
-  } else {
-    alert('Stream not available');
-  }
+  if (!video.m3u8) return alert('No stream');
+
+  let url = video.m3u8;
+
+  // 🔥 FIX TEMPLATE
+  url = url.replace('_TPL_', 'hls4A');
+
+  window.open(url, '_blank');
 };
       card.addEventListener('click', go);
       card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') go(); });
