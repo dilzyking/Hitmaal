@@ -1018,7 +1018,7 @@ function esc(str) {
 }
 
 /* ── Video grid ── */
-const API_URL = "https://hitmaal.in/m3u8.json";
+const API_URL = "https://hitmaal.in/ullu-m3u8.json";
 let activeVid = null, unmuteTimer = null;
 const tags = [
   ['Hot','tag-red'],['Webseries','tag-gold'],['Ullu','tag-purple'],
@@ -1052,7 +1052,7 @@ fetch(API_URL)
       const card = document.createElement('div');
       card.className = 'v-card';
       card.innerHTML = `
-        <a href="player.html?video=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}&time=${encodeURIComponent(time)}&dur=${encodeURIComponent(dur)}" style="display:block;text-decoration:none;">
+        <a href="ullu/player.html?video=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}&time=${encodeURIComponent(time)}&dur=${encodeURIComponent(dur)}" style="display:block;text-decoration:none;">
           <div class="thumb-wrap">
             <img class="thumb-img" src="${esc(thumb)}" alt="${esc(title)} - Hot Webseries Watch Online" loading="lazy">
             <video class="thumb-video" id="${uid}" muted loop playsinline preload="none">
