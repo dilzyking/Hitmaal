@@ -1,25 +1,7 @@
 {
-  "created_at": "2026-03-29T03:27:20.214Z",
+  "created_at": "2026-03-29T05:27:36.213Z",
   "total": 200,
   "videos": [
-    {
-      "title": "Rangeen Tailor Episode 1",
-      "upload_time": "6 Hr Ago",
-      "duration": "19:00",
-      "page_url": "https://hmaal.net/rangeen-tailor-episode-1-2/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2024/12/Rangeen-Tailor-Episode-1.webp",
-      "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Habbit/Rangeen Tailor/Rangeen Tailor Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T181420Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=77d8f3d39321fcd8824bdaaf408dddb56264ceacc21a27960955c0a78177cee5"
-    },
-    {
-      "title": "Pachpan Main Bachpan Episode 1",
-      "upload_time": "6 Hr Ago",
-      "duration": "20:00",
-      "page_url": "https://hmaal.net/pachpan-main-bachpan-episode-1/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2024/11/Pachpan-Main-Bachpan-Episode-1.webp",
-      "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Ratri/Pachpan Main Bachpan/Pachpan Main Bachpan Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T184016Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4d12d0097640ed8b681b7ae05e7f3f440e648dea987e6817608189402e268782"
-    },
     {
       "title": "Pachpan Main Bachpan Episode 3",
       "upload_time": "2 Hr Ago",
@@ -39,13 +21,31 @@
       "stream_url": "https://video.maalcdn.com/Moovi/Sajan Chale Sasural/Sajan Chale Sasural Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T181943Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3dd48350d2c7eb90c6ef1b0107fecd9bb19b9568482d28ca7965a8cf1767f201"
     },
     {
-      "title": "Courtship Episode 2",
+      "title": "Rangeen Tailor Episode 1",
       "upload_time": "6 Hr Ago",
-      "duration": "26:00",
-      "page_url": "https://hmaal.net/courtship-episode-2/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2024/10/Courtship-Episode-2.webp",
+      "duration": "19:00",
+      "page_url": "https://hmaal.net/rangeen-tailor-episode-1-2/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2024/12/Rangeen-Tailor-Episode-1.webp",
       "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Kooku/Courtship/Courtship E2.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T190842Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4f489a47060d12aaa6b617e41597f87999e160f355121f4a27bb4d9ac4036ef1"
+      "stream_url": "https://video.maalcdn.com/Habbit/Rangeen Tailor/Rangeen Tailor Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T181420Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=77d8f3d39321fcd8824bdaaf408dddb56264ceacc21a27960955c0a78177cee5"
+    },
+    {
+      "title": "Rasgulla Episode 1",
+      "upload_time": "7 Mnutes Ago",
+      "duration": "19:00",
+      "page_url": "https://hmaal.net/rasgulla-episode-1/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/10/Rasgulla-Episode-1.webp",
+      "stream_type": "mp4",
+      "stream_url": "https://video.maalcdn.com/Moovi/Rasgulla/Rasgulla Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260329/auto/s3/aws4_request&X-Amz-Date=20260329T003410Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=19a56178523796e8471c2ed33584dae91d38fab2bd56ae6f1aefc10c9dea261e"
+    },
+    {
+      "title": "Pachpan Main Bachpan Episode 1",
+      "upload_time": "6 Hr Ago",
+      "duration": "20:00",
+      "page_url": "https://hmaal.net/pachpan-main-bachpan-episode-1/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2024/11/Pachpan-Main-Bachpan-Episode-1.webp",
+      "stream_type": "mp4",
+      "stream_url": "https://video.maalcdn.com/Ratri/Pachpan Main Bachpan/Pachpan Main Bachpan Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T184016Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4d12d0097640ed8b681b7ae05e7f3f440e648dea987e6817608189402e268782"
     },
     {
       "title": "Daman",
@@ -66,13 +66,13 @@
       "stream_url": "https://video.maalcdn.com/Moovi/Rasgulla/Rasgulla Episode 2.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T234328Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f30b7a090a0c31abcda73f76cfc5aae5da79eac22ddd227aeec76c90212b23e4"
     },
     {
-      "title": "Rasgulla Episode 1",
-      "upload_time": "7 Mnutes Ago",
-      "duration": "19:00",
-      "page_url": "https://hmaal.net/rasgulla-episode-1/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/10/Rasgulla-Episode-1.webp",
+      "title": "Courtship Episode 2",
+      "upload_time": "6 Hr Ago",
+      "duration": "26:00",
+      "page_url": "https://hmaal.net/courtship-episode-2/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2024/10/Courtship-Episode-2.webp",
       "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Moovi/Rasgulla/Rasgulla Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260329/auto/s3/aws4_request&X-Amz-Date=20260329T003410Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=19a56178523796e8471c2ed33584dae91d38fab2bd56ae6f1aefc10c9dea261e"
+      "stream_url": "https://video.maalcdn.com/Kooku/Courtship/Courtship E2.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T190842Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4f489a47060d12aaa6b617e41597f87999e160f355121f4a27bb4d9ac4036ef1"
     },
     {
       "title": "Sajan Chale Sasural Episode 6",
@@ -91,6 +91,15 @@
       "thumbnail": "https://hmaal.net/wp-content/uploads/2024/12/Sajan-Chale-Sasural-Episode-3.webp",
       "stream_type": "mp4",
       "stream_url": "https://video.maalcdn.com/Moovi/Sajan Chale Sasural/Sajan Chale Sasural Episode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T132044Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c72cadf14aeec6deb4455c15f050508a9cd010636286755b1baa1dd577a58daa"
+    },
+    {
+      "title": "At Night",
+      "upload_time": "11 Hr Ago",
+      "duration": "23:00",
+      "page_url": "https://hmaal.net/at-night/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/10/At-Night.webp",
+      "stream_type": "mp4",
+      "stream_url": "https://video.maalcdn.com/Rio Plus/Single/At Night.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T131310Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ea2482e49d148a2754258e822ba8e78a806c5d19d7d0058845327ec5fc851a40"
     },
     {
       "title": "Baba Ki Ashiqui",
@@ -118,15 +127,6 @@
       "thumbnail": "https://hmaal.net/wp-content/uploads/2024/12/Manchala-Aashiq-Episode-1.webp",
       "stream_type": "mp4",
       "stream_url": "https://video.maalcdn.com/Moovi/Manchala Aashiq/Manchala Aashiq Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T102110Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=24d1bf5eca8713e37ca68eaae8debe34cd6afc4a281dc7c579c48e34b4ca7c2b"
-    },
-    {
-      "title": "At Night",
-      "upload_time": "11 Hr Ago",
-      "duration": "23:00",
-      "page_url": "https://hmaal.net/at-night/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/10/At-Night.webp",
-      "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Rio Plus/Single/At Night.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T131310Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ea2482e49d148a2754258e822ba8e78a806c5d19d7d0058845327ec5fc851a40"
     },
     {
       "title": "Mirchi Sukh Episode 3",
@@ -246,15 +246,6 @@
       "stream_url": "https://video.maalcdn.com/Rio Plus/Single/Love By Chance.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260327/auto/s3/aws4_request&X-Amz-Date=20260327T222649Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3f6f1ddbfb1808c83a0e1749288ba814c37a5b4463ac455fa4614824a5bc1807"
     },
     {
-      "title": "Yarana",
-      "upload_time": "1 Dy Ago",
-      "duration": "14:00",
-      "page_url": "https://hmaal.net/yarana/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/10/Yarana.webp",
-      "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Rio Plus/Single/Yarana.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260327/auto/s3/aws4_request&X-Amz-Date=20260327T201146Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b9a0c8e0c4d113ddb0e9612502f18c244f2b7329ac8309d20ce268cc1e7c71ab"
-    },
-    {
       "title": "Manchala Aashiq Episode 4",
       "upload_time": "1 Dy Ago",
       "duration": "21:00",
@@ -262,6 +253,15 @@
       "thumbnail": "https://hmaal.net/wp-content/uploads/2024/12/Manchala-Aashiq-Episode-4.webp",
       "stream_type": "mp4",
       "stream_url": "https://video.maalcdn.com/Moovi/Manchala Aashiq/Manchala Aashiq Episode 4.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260327/auto/s3/aws4_request&X-Amz-Date=20260327T215236Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=88caefc0b756c2dd4932b71ac7247a7a249923a0494f83ea34220cacdf064015"
+    },
+    {
+      "title": "Yarana",
+      "upload_time": "1 Dy Ago",
+      "duration": "14:00",
+      "page_url": "https://hmaal.net/yarana/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/10/Yarana.webp",
+      "stream_type": "mp4",
+      "stream_url": "https://video.maalcdn.com/Rio Plus/Single/Yarana.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260327/auto/s3/aws4_request&X-Amz-Date=20260327T201146Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b9a0c8e0c4d113ddb0e9612502f18c244f2b7329ac8309d20ce268cc1e7c71ab"
     },
     {
       "title": "Manchala Aashiq Episode 3",
@@ -381,13 +381,13 @@
       "stream_url": "https://video.maalcdn.com/Jugnu Tv/Haveli Ki Dulhan/Haveli Ki Dulhan Episode 2.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260326/auto/s3/aws4_request&X-Amz-Date=20260326T074727Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=71df29c025edc0516c5ab57556c7268469757e7db77a424f2e768ee58b834c92"
     },
     {
-      "title": "Komal Ki Suhagraat Episode 2",
+      "title": "Chowkidar Episode 3",
       "upload_time": "2 Dy Ago",
-      "duration": "38:00",
-      "page_url": "https://hmaal.net/komal-ki-suhagraat-episode-2/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/09/Komal-Ki-Suhagraat-Episode-2.webp",
+      "duration": "21:00",
+      "page_url": "https://hmaal.net/chowkidar-episode-3/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/10/Chowkidar-Episode-3.webp",
       "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Jugnu Tv/Komal Ki Suhagraat/Komal Ki Suhagraat Episode 2.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260326/auto/s3/aws4_request&X-Amz-Date=20260326T073056Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e5e594880344b1e17182ea3feeb35b07230d4f1caa4a8ce0ddd5535c80f0d33b"
+      "stream_url": "https://video.maalcdn.com/Jugnu Tv/Chowkidar/Chowkidar Episode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260326/auto/s3/aws4_request&X-Amz-Date=20260326T071321Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ec1eb17e38826f97d4d2b789658ec2bee3fdf87517e2467238f79160e0d011a2"
     },
     {
       "title": "Rangeela Budda Episode 2",
@@ -399,13 +399,13 @@
       "stream_url": "https://video.maalcdn.com/Jugnu Tv/Rangeela Budda/Rangeela Budda Episode 2.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260326/auto/s3/aws4_request&X-Amz-Date=20260326T054528Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e04354b6228c0124ae4bc23fb8d85232a4211254197ce6c374f57ea7d6be6c20"
     },
     {
-      "title": "Chowkidar Episode 3",
+      "title": "Komal Ki Suhagraat Episode 2",
       "upload_time": "2 Dy Ago",
-      "duration": "21:00",
-      "page_url": "https://hmaal.net/chowkidar-episode-3/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/10/Chowkidar-Episode-3.webp",
+      "duration": "38:00",
+      "page_url": "https://hmaal.net/komal-ki-suhagraat-episode-2/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/09/Komal-Ki-Suhagraat-Episode-2.webp",
       "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Jugnu Tv/Chowkidar/Chowkidar Episode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260326/auto/s3/aws4_request&X-Amz-Date=20260326T071321Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ec1eb17e38826f97d4d2b789658ec2bee3fdf87517e2467238f79160e0d011a2"
+      "stream_url": "https://video.maalcdn.com/Jugnu Tv/Komal Ki Suhagraat/Komal Ki Suhagraat Episode 2.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260326/auto/s3/aws4_request&X-Amz-Date=20260326T073056Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e5e594880344b1e17182ea3feeb35b07230d4f1caa4a8ce0ddd5535c80f0d33b"
     },
     {
       "title": "Komal Ki Suhagraat Episode 3",
@@ -471,15 +471,6 @@
       "stream_url": "https://video.maalcdn.com/Jugnu Tv/Aakhri Raat/Aakhri Raat E3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260325/auto/s3/aws4_request&X-Amz-Date=20260325T210712Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6ef4dd6a58bd1a47407d56f62578508fe1437104ed9e971c6b28d8da74a0cc59"
     },
     {
-      "title": "Rangeela Budda Episode 5",
-      "upload_time": "2 Dy Ago",
-      "duration": "19:00",
-      "page_url": "https://hmaal.net/rangeela-budda-episode-5/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/09/Rangeela-Budda-Episode-5.webp",
-      "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Jugnu Tv/Rangeela Budda/Rangeela Budda Episode 5.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260325/auto/s3/aws4_request&X-Amz-Date=20260325T194147Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=02d94cac5e7f00bd78c080349ea2904deb4044d6d9b9e356c57f34f93f43b134"
-    },
-    {
       "title": "Chowkidar Episode 1",
       "upload_time": "2 Dy Ago",
       "duration": "18:00",
@@ -489,13 +480,13 @@
       "stream_url": "https://video.maalcdn.com/Jugnu Tv/Chowkidar/Chowkidar Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260325/auto/s3/aws4_request&X-Amz-Date=20260325T203547Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b23df1e618a825de0f364129f4e348f0748887932b62ace49f787a0febf1f333"
     },
     {
-      "title": "Aakhri Raat Episode 1",
+      "title": "Rangeela Budda Episode 5",
       "upload_time": "2 Dy Ago",
-      "duration": "26:00",
-      "page_url": "https://hmaal.net/aakhri-raat-episode-1/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2024/10/Aakhri-Raat-Episode-1.webp",
+      "duration": "19:00",
+      "page_url": "https://hmaal.net/rangeela-budda-episode-5/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/09/Rangeela-Budda-Episode-5.webp",
       "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Jugnu Tv/Aakhri Raat/Aakhri Raat E1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260325/auto/s3/aws4_request&X-Amz-Date=20260325T191537Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5f46554f170c93d2274b099c7c7404e53548a2082cc49de4c05c2e8fc82c905e"
+      "stream_url": "https://video.maalcdn.com/Jugnu Tv/Rangeela Budda/Rangeela Budda Episode 5.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260325/auto/s3/aws4_request&X-Amz-Date=20260325T194147Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=02d94cac5e7f00bd78c080349ea2904deb4044d6d9b9e356c57f34f93f43b134"
     },
     {
       "title": "Rangili Dobhan Episode 4",
@@ -505,6 +496,15 @@
       "thumbnail": "https://hmaal.net/wp-content/uploads/2024/12/Rangili-Dhoban-Episode-4.webp",
       "stream_type": "mp4",
       "stream_url": "https://video.maalcdn.com/Jugnu Tv/Rangili Dobhan/Rangili Dobhan Episode 4.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260325/auto/s3/aws4_request&X-Amz-Date=20260325T181935Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1be94f7ae89a614d85511997a31b376d459d8ca2da77ce3216ae033f86999663"
+    },
+    {
+      "title": "Aakhri Raat Episode 1",
+      "upload_time": "2 Dy Ago",
+      "duration": "26:00",
+      "page_url": "https://hmaal.net/aakhri-raat-episode-1/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2024/10/Aakhri-Raat-Episode-1.webp",
+      "stream_type": "mp4",
+      "stream_url": "https://video.maalcdn.com/Jugnu Tv/Aakhri Raat/Aakhri Raat E1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260325/auto/s3/aws4_request&X-Amz-Date=20260325T191537Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5f46554f170c93d2274b099c7c7404e53548a2082cc49de4c05c2e8fc82c905e"
     },
     {
       "title": "Ladla Dever Episode 2",
@@ -597,15 +597,6 @@
       "stream_url": "https://video.maalcdn.com/Jugnu Tv/Rangili Dobhan/Rangili Dobhan Episode 2.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260325/auto/s3/aws4_request&X-Amz-Date=20260325T093706Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=efcb47c2f443409c2747d2f35451ab19e7c8c2ca148187f46ff5ff06d9e6f002"
     },
     {
-      "title": "Sasur Ki Dulhan Episode 3",
-      "upload_time": "3 Dy Ago",
-      "duration": "21:00",
-      "page_url": "https://hmaal.net/sasur-ki-dulhan-episode-3/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2024/12/Sasur-Ki-Dulhan-Episode-3.webp",
-      "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Jugnu Tv/Sasur Ki Dulhan/Sasur Ki Dulhan Episode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260325/auto/s3/aws4_request&X-Amz-Date=20260325T054731Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e73a98bdfe6b7bc43247be5cc57855a8de77ba4d422f33a106a310696d63af60"
-    },
-    {
       "title": "Utha Patak Jugnu Episode 4",
       "upload_time": "3 Dy Ago",
       "duration": "19:00",
@@ -613,6 +604,15 @@
       "thumbnail": "https://hmaal.net/wp-content/uploads/2025/10/Utha-Patak-Jugnu-Episode-4.webp",
       "stream_type": "mp4",
       "stream_url": "https://video.maalcdn.com/Jugnu Tv/Utha Patak/Utha Patak Episode 4.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260325/auto/s3/aws4_request&X-Amz-Date=20260325T093432Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5791c96bf7625c69cd0b776957a2f3927495d16cc12bb8570d840609d58df9c4"
+    },
+    {
+      "title": "Sasur Ki Dulhan Episode 3",
+      "upload_time": "3 Dy Ago",
+      "duration": "21:00",
+      "page_url": "https://hmaal.net/sasur-ki-dulhan-episode-3/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2024/12/Sasur-Ki-Dulhan-Episode-3.webp",
+      "stream_type": "mp4",
+      "stream_url": "https://video.maalcdn.com/Jugnu Tv/Sasur Ki Dulhan/Sasur Ki Dulhan Episode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260325/auto/s3/aws4_request&X-Amz-Date=20260325T054731Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e73a98bdfe6b7bc43247be5cc57855a8de77ba4d422f33a106a310696d63af60"
     },
     {
       "title": "Damaadji Lage Raho Episode 4",
@@ -624,15 +624,6 @@
       "stream_url": "https://video.maalcdn.com/Jugnu Tv/Damaadji Lage Raho/Damaadji Lage Raho Episode 4.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260325/auto/s3/aws4_request&X-Amz-Date=20260325T083932Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e7150c9e56229830d40ec150535d76ce4913b9e33e1a864229c672a99d64f40f"
     },
     {
-      "title": "Chal Episode 3",
-      "upload_time": "3 Dy Ago",
-      "duration": "17:00",
-      "page_url": "https://hmaal.net/chal-episode-3/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2024/11/Chal-Eppisode-3.webp",
-      "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Jugnu Tv/Chal/Chal Eppisode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260325/auto/s3/aws4_request&X-Amz-Date=20260325T072345Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8d0f3542d3390faa464913b938832df543b941956f77422fc7de9ca5788aabf5"
-    },
-    {
       "title": "Damaadji Lage Raho Episode 6",
       "upload_time": "3 Dy Ago",
       "duration": "21:00",
@@ -642,13 +633,13 @@
       "stream_url": "https://video.maalcdn.com/Jugnu Tv/Damaadji Lage Raho/Damaadji Lage Raho Episode 6.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260325/auto/s3/aws4_request&X-Amz-Date=20260325T081336Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a9084d5bc2ed2ec58c68035089e03da0cdce576af4aa3ea0b518ce581010f2d4"
     },
     {
-      "title": "Utha Patak Jugnu Episode 3",
+      "title": "Chal Episode 3",
       "upload_time": "3 Dy Ago",
-      "duration": "23:00",
-      "page_url": "https://hmaal.net/utha-patak-jugnu-episode-3/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/10/Utha-Patak-Jugnu-Episode-3.webp",
+      "duration": "17:00",
+      "page_url": "https://hmaal.net/chal-episode-3/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2024/11/Chal-Eppisode-3.webp",
       "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Jugnu Tv/Utha Patak/Utha Patak Episode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260325/auto/s3/aws4_request&X-Amz-Date=20260325T064027Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=485c57a2dd6d836412a7455aa5db8b508fa9022eb8505f2c96ec1ba53c3f9314"
+      "stream_url": "https://video.maalcdn.com/Jugnu Tv/Chal/Chal Eppisode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260325/auto/s3/aws4_request&X-Amz-Date=20260325T072345Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8d0f3542d3390faa464913b938832df543b941956f77422fc7de9ca5788aabf5"
     },
     {
       "title": "Sasur Ki Dulhan Episode 2",
@@ -658,6 +649,15 @@
       "thumbnail": "https://hmaal.net/wp-content/uploads/2024/12/Sasur-Ki-Dulhan-Episode-2.webp",
       "stream_type": "mp4",
       "stream_url": "https://video.maalcdn.com/Jugnu Tv/Sasur Ki Dulhan/Sasur Ki Dulhan Episode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260325/auto/s3/aws4_request&X-Amz-Date=20260325T054731Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e73a98bdfe6b7bc43247be5cc57855a8de77ba4d422f33a106a310696d63af60"
+    },
+    {
+      "title": "Utha Patak Jugnu Episode 3",
+      "upload_time": "3 Dy Ago",
+      "duration": "23:00",
+      "page_url": "https://hmaal.net/utha-patak-jugnu-episode-3/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/10/Utha-Patak-Jugnu-Episode-3.webp",
+      "stream_type": "mp4",
+      "stream_url": "https://video.maalcdn.com/Jugnu Tv/Utha Patak/Utha Patak Episode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260325/auto/s3/aws4_request&X-Amz-Date=20260325T064027Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=485c57a2dd6d836412a7455aa5db8b508fa9022eb8505f2c96ec1ba53c3f9314"
     },
     {
       "title": "Damaadji Lage Raho Episode 1",
@@ -831,15 +831,6 @@
       "stream_url": "https://video.maalcdn.com/Jugnu Tv/Shararati Saas/Shararati Saas Episode 4.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260324/auto/s3/aws4_request&X-Amz-Date=20260324T145210Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=870487f8a14a29ea82d73ffae6042a16b764713e0dc714adbad8937afe0825af"
     },
     {
-      "title": "Gharwali Baharwali Episode 5",
-      "upload_time": "4 Dy Ago",
-      "duration": "19:00",
-      "page_url": "https://hmaal.net/gharwali-baharwali-episode-5/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/04/Gharwali-Baharwali-Episode-5.webp",
-      "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Jugnu Tv/Gharwali Baharwali/Gharwali Baharwali Episode 5.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260324/auto/s3/aws4_request&X-Amz-Date=20260324T131105Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ecdcf80c62da88044d6a535c2952f75dd7d5fb0be96532a30fd69e64b178a8fd"
-    },
-    {
       "title": "Gharwali Baharwali Episode 7",
       "upload_time": "4 Dy Ago",
       "duration": "25:00",
@@ -847,6 +838,15 @@
       "thumbnail": "https://hmaal.net/wp-content/uploads/2025/04/Gharwali-Baharwali-Episode-7.webp",
       "stream_type": "mp4",
       "stream_url": "https://video.maalcdn.com/Jugnu Tv/Gharwali Baharwali/Gharwali Baharwali Episode 7.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260324/auto/s3/aws4_request&X-Amz-Date=20260324T125727Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d5a8f23d6290cef33f04ff18bae25f94584c953e37e3894124c91ff8be94c9f8"
+    },
+    {
+      "title": "Gharwali Baharwali Episode 5",
+      "upload_time": "4 Dy Ago",
+      "duration": "19:00",
+      "page_url": "https://hmaal.net/gharwali-baharwali-episode-5/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/04/Gharwali-Baharwali-Episode-5.webp",
+      "stream_type": "mp4",
+      "stream_url": "https://video.maalcdn.com/Jugnu Tv/Gharwali Baharwali/Gharwali Baharwali Episode 5.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260324/auto/s3/aws4_request&X-Amz-Date=20260324T131105Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ecdcf80c62da88044d6a535c2952f75dd7d5fb0be96532a30fd69e64b178a8fd"
     },
     {
       "title": "Gharwali Baharwali Episode 6",
@@ -858,15 +858,6 @@
       "stream_url": "https://video.maalcdn.com/Jugnu Tv/Gharwali Baharwali/Gharwali Baharwali Episode 6.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260324/auto/s3/aws4_request&X-Amz-Date=20260324T110520Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=15de08a299848e62c0f5dff20f274b835c9f40b68c70c33e42ccc26cb1d0d9cb"
     },
     {
-      "title": "Shararati Saas Episode 2",
-      "upload_time": "4 Dy Ago",
-      "duration": "26:00",
-      "page_url": "https://hmaal.net/shararati-saas-episode-2/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Shararati-Saas-Episode-2.webp",
-      "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Jugnu Tv/Shararati Saas/Shararati Saas Episode 2.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260324/auto/s3/aws4_request&X-Amz-Date=20260324T083506Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3bc48f8143805376e934ceed1df40f05b45618aaca306f83bdbf4a01581aaf23"
-    },
-    {
       "title": "Shararati Saas Episode 1",
       "upload_time": "4 Dy Ago",
       "duration": "19:00",
@@ -874,6 +865,15 @@
       "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Shararati-Saas-Episode-1.webp",
       "stream_type": "mp4",
       "stream_url": "https://video.maalcdn.com/Jugnu Tv/Shararati Saas/Shararati Saas Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260324/auto/s3/aws4_request&X-Amz-Date=20260324T082009Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e81c3411473cb2745b11779719ce2765b100e4a20b35e01a0d3aa5f41add0519"
+    },
+    {
+      "title": "Shararati Saas Episode 2",
+      "upload_time": "4 Dy Ago",
+      "duration": "26:00",
+      "page_url": "https://hmaal.net/shararati-saas-episode-2/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Shararati-Saas-Episode-2.webp",
+      "stream_type": "mp4",
+      "stream_url": "https://video.maalcdn.com/Jugnu Tv/Shararati Saas/Shararati Saas Episode 2.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260324/auto/s3/aws4_request&X-Amz-Date=20260324T083506Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3bc48f8143805376e934ceed1df40f05b45618aaca306f83bdbf4a01581aaf23"
     },
     {
       "title": "Utha Patak Jugnu Episode 1",
@@ -885,15 +885,6 @@
       "stream_url": "https://video.maalcdn.com/Jugnu Tv/Utha Patak/Utha Patak Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260324/auto/s3/aws4_request&X-Amz-Date=20260324T072917Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e86b5130cbfac426eb28e9f8bed58341951d8508db198896c6a78159c35c4f1e"
     },
     {
-      "title": "Damdar Ladoo Episode 6",
-      "upload_time": "4 Dy Ago",
-      "duration": "23:00",
-      "page_url": "https://hmaal.net/damdar-ladoo-episode-6/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Damdar-Ladoo-Episode-6.webp",
-      "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Jugnu Tv/Damdar Ladoo/Damdar Ladoo Episode 6.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260324/auto/s3/aws4_request&X-Amz-Date=20260324T041912Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fceda315b85f7a156cf71f93431b81dd7319b22c05d34aa34f32cdf60b86d75b"
-    },
-    {
       "title": "Damdar Ladoo Episode 1",
       "upload_time": "4 Dy Ago",
       "duration": "18:00",
@@ -901,6 +892,15 @@
       "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Damdar-Ladoo-Episode-1.webp",
       "stream_type": "mp4",
       "stream_url": "https://video.maalcdn.com/Jugnu Tv/Damdar Ladoo/Damdar Ladoo Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260324/auto/s3/aws4_request&X-Amz-Date=20260324T065519Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2806f96281a0343332fd72f4f26a010db7a47d565f0f4e1ee6c3090b57fd1f0f"
+    },
+    {
+      "title": "Damdar Ladoo Episode 6",
+      "upload_time": "4 Dy Ago",
+      "duration": "23:00",
+      "page_url": "https://hmaal.net/damdar-ladoo-episode-6/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Damdar-Ladoo-Episode-6.webp",
+      "stream_type": "mp4",
+      "stream_url": "https://video.maalcdn.com/Jugnu Tv/Damdar Ladoo/Damdar Ladoo Episode 6.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260324/auto/s3/aws4_request&X-Amz-Date=20260324T041912Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fceda315b85f7a156cf71f93431b81dd7319b22c05d34aa34f32cdf60b86d75b"
     },
     {
       "title": "Damdar Ladoo Episode 4",
@@ -975,13 +975,13 @@
       "stream_url": "https://video.maalcdn.com/Jugnu Tv/Gharwali Baharwali/Gharwali Baharwali Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260323/auto/s3/aws4_request&X-Amz-Date=20260323T222620Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e6e1d812068c3347dce55359faf35d784628f05fbfeb858b206b41d9bffb438f"
     },
     {
-      "title": "Kajri Episode 1",
-      "upload_time": "4 Dy Ago",
-      "duration": "22:00",
-      "page_url": "https://hmaal.net/kajri-episode-1/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Kajri-Episode-1.webp",
+      "title": "Chaashni Episode 3",
+      "upload_time": "5 Dy Ago",
+      "duration": "27:00",
+      "page_url": "https://hmaal.net/chaashni-episode-3/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/03/Chaashni-Episode-3.webp",
       "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Jugnu Tv/Kajri/Kajri Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260323/auto/s3/aws4_request&X-Amz-Date=20260323T221134Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=aeb427f3e569109e5cab71670c99e8c2a099ef9a0ad202aec3821e632e8d968f"
+      "stream_url": "https://cdn.bmaal.com/ULLU/Chaashni D1/Chaashni Episode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2/20260323/auto/s3/aws4_request&X-Amz-Date=20260323T174727Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=bdaa25a9e9c4f829c809f15e679d0138db63cad4745eaae2946aceeba9b4633c"
     },
     {
       "title": "Damdar Ladoo Episode 2",
@@ -993,6 +993,15 @@
       "stream_url": "https://video.maalcdn.com/Jugnu Tv/Damdar Ladoo/Damdar Ladoo Episode 2.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260323/auto/s3/aws4_request&X-Amz-Date=20260323T204028Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e4aca32aee0a2583be8f095f2442dbfd3e4b9baf24a5b2a06d5a2697a2ca0ef4"
     },
     {
+      "title": "Kajri Episode 1",
+      "upload_time": "4 Dy Ago",
+      "duration": "22:00",
+      "page_url": "https://hmaal.net/kajri-episode-1/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Kajri-Episode-1.webp",
+      "stream_type": "mp4",
+      "stream_url": "https://video.maalcdn.com/Jugnu Tv/Kajri/Kajri Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260323/auto/s3/aws4_request&X-Amz-Date=20260323T221134Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=aeb427f3e569109e5cab71670c99e8c2a099ef9a0ad202aec3821e632e8d968f"
+    },
+    {
       "title": "Chaashni Episode 2",
       "upload_time": "5 Dy Ago",
       "duration": "20:00",
@@ -1000,15 +1009,6 @@
       "thumbnail": "https://hmaal.net/wp-content/uploads/2025/03/Chaashni-Episode-2.webp",
       "stream_type": "mp4",
       "stream_url": "https://cdn.bmaal.com/ULLU/Chaashni D1/Chaashni Episode 2.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2/20260323/auto/s3/aws4_request&X-Amz-Date=20260323T171916Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e1ffa1eb203ec50b806626478df6d250dc2dd5721b363ab1b391556c211fd7a1"
-    },
-    {
-      "title": "Chaashni Episode 3",
-      "upload_time": "5 Dy Ago",
-      "duration": "27:00",
-      "page_url": "https://hmaal.net/chaashni-episode-3/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/03/Chaashni-Episode-3.webp",
-      "stream_type": "mp4",
-      "stream_url": "https://cdn.bmaal.com/ULLU/Chaashni D1/Chaashni Episode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2/20260323/auto/s3/aws4_request&X-Amz-Date=20260323T174727Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=bdaa25a9e9c4f829c809f15e679d0138db63cad4745eaae2946aceeba9b4633c"
     },
     {
       "title": "Raat Baaki Baat Baaki Episode 5",
@@ -1128,15 +1128,6 @@
       "stream_url": "https://cdn.bmaal.com/ULLU/Chaashni D1/Chaashni Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2/20260323/auto/s3/aws4_request&X-Amz-Date=20260323T022721Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0ca23277d3420e800d315adf7627b8a2f970e297a3efa97003e1dd7ece26ad55"
     },
     {
-      "title": "Lene Ke Dene Episode 1",
-      "upload_time": "5 Dy Ago",
-      "duration": "22:00",
-      "page_url": "https://hmaal.net/lene-ke-dene-episode-1/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/02/Lene-Ke-Dene-Episode-1.webp",
-      "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/ULLU/Lene Ke Dene-D1/Lene Ke Dene Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260323/auto/s3/aws4_request&X-Amz-Date=20260323T011002Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0e30ea5952e0d2ea46aac28536e5dd32aa5798b5887b6ef04c372381f111b5e8"
-    },
-    {
       "title": "Komal Ki Sawari Episode 2",
       "upload_time": "5 Dy Ago",
       "duration": "25:00",
@@ -1146,13 +1137,13 @@
       "stream_url": "https://video.maalcdn.com/Wow Originals/Komal Ki Sawari/Komal Ki Sawari Episode 2.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260323/auto/s3/aws4_request&X-Amz-Date=20260323T022149Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4d93a37b3e543b65f59edf5afa31b4a0cce5df4c101f545f0b78c2673819673a"
     },
     {
-      "title": "Jungle Cottage Episode 2",
+      "title": "Lene Ke Dene Episode 1",
       "upload_time": "5 Dy Ago",
-      "duration": "19:00",
-      "page_url": "https://hmaal.net/jungle-cottage-episode-2/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Jungle-Cottage-Episode-2.webp",
+      "duration": "22:00",
+      "page_url": "https://hmaal.net/lene-ke-dene-episode-1/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/02/Lene-Ke-Dene-Episode-1.webp",
       "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Wow Originals/Jungle Cottage/Jungle Cottage Episode 2.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260323/auto/s3/aws4_request&X-Amz-Date=20260323T010926Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a12fc2ae3eb0359f33418eb644b959b4025cfeb70c5379ef71b42eb47782dc34"
+      "stream_url": "https://video.maalcdn.com/ULLU/Lene Ke Dene-D1/Lene Ke Dene Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260323/auto/s3/aws4_request&X-Amz-Date=20260323T011002Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0e30ea5952e0d2ea46aac28536e5dd32aa5798b5887b6ef04c372381f111b5e8"
     },
     {
       "title": "Jungle Cottage Episode 1",
@@ -1162,6 +1153,15 @@
       "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Jungle-Cottage-Episode-1.webp",
       "stream_type": "mp4",
       "stream_url": "https://video.maalcdn.com/Wow Originals/Jungle Cottage/Jungle Cottage Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260323/auto/s3/aws4_request&X-Amz-Date=20260323T004621Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7d54dafe93ae97d531edbc27792ceb5472ce3593d304e5f33523f325e9f1deaf"
+    },
+    {
+      "title": "Jungle Cottage Episode 2",
+      "upload_time": "5 Dy Ago",
+      "duration": "19:00",
+      "page_url": "https://hmaal.net/jungle-cottage-episode-2/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Jungle-Cottage-Episode-2.webp",
+      "stream_type": "mp4",
+      "stream_url": "https://video.maalcdn.com/Wow Originals/Jungle Cottage/Jungle Cottage Episode 2.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260323/auto/s3/aws4_request&X-Amz-Date=20260323T010926Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a12fc2ae3eb0359f33418eb644b959b4025cfeb70c5379ef71b42eb47782dc34"
     },
     {
       "title": "Komal Ki Sawari Episode 1",
@@ -1218,15 +1218,6 @@
       "stream_url": "https://video.maalcdn.com/ULLU/Lene Ke Dene-D1/Lene Ke Dene Episode 4.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260322/auto/s3/aws4_request&X-Amz-Date=20260322T193555Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e4a62b452ebecf5fff942d31dc6c71422ec43d9d1112fd500017e7e8cb237770"
     },
     {
-      "title": "Julie Maam ki Extra Class Episode 1",
-      "upload_time": "6 Dy Ago",
-      "duration": "22:00",
-      "page_url": "https://hmaal.net/julie-maam-ki-extra-class-episode-1/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Julie-Maam-ki-Extra-Class-Episode-1.webp",
-      "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Wow Originals/Julie Maam ki Extra Class/Julie Maam ki Extra Class Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260322/auto/s3/aws4_request&X-Amz-Date=20260322T175835Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5707c40a5b7c854455088c8743f436f15d03e112b3ca6cffb84e092ae9e52de6"
-    },
-    {
       "title": "Biwi Ka Khat Episode 6",
       "upload_time": "6 Dy Ago",
       "duration": "23:00",
@@ -1234,6 +1225,15 @@
       "thumbnail": "https://hmaal.net/wp-content/uploads/2025/04/Biwi-Ka-Khat-Episode-6.webp",
       "stream_type": "mp4",
       "stream_url": "https://cdn.bmaal.com/ULLU/Biwi Ka Khat/Biwi Ka Khat Episode 6.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2/20260322/auto/s3/aws4_request&X-Amz-Date=20260322T172709Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=369acf98c5f6540a16e209dc2c66092fb479ac9a58083fbf33a189cde150569f"
+    },
+    {
+      "title": "Julie Maam ki Extra Class Episode 1",
+      "upload_time": "6 Dy Ago",
+      "duration": "22:00",
+      "page_url": "https://hmaal.net/julie-maam-ki-extra-class-episode-1/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Julie-Maam-ki-Extra-Class-Episode-1.webp",
+      "stream_type": "mp4",
+      "stream_url": "https://video.maalcdn.com/Wow Originals/Julie Maam ki Extra Class/Julie Maam ki Extra Class Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260322/auto/s3/aws4_request&X-Amz-Date=20260322T175835Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5707c40a5b7c854455088c8743f436f15d03e112b3ca6cffb84e092ae9e52de6"
     },
     {
       "title": "Sarkaaye Lo Khatiya Episode 5",
@@ -1290,15 +1290,6 @@
       "stream_url": "https://video.maalcdn.com/Wow Originals/Julie Maam ki Extra Class/Julie Maam ki Extra Class Episode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260322/auto/s3/aws4_request&X-Amz-Date=20260322T154634Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4ecd816a46534415363dec0ec82ca9212ca9352bdbdc57a95256b56d88c7d1a8"
     },
     {
-      "title": "Julie Maam ki Extra Class Episode 2",
-      "upload_time": "6 Dy Ago",
-      "duration": "27:00",
-      "page_url": "https://hmaal.net/julie-maam-ki-extra-class-episode-2/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Julie-Maam-ki-Extra-Class-Episode-2.webp",
-      "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Wow Originals/Julie Maam ki Extra Class/Julie Maam ki Extra Class Episode 2aay.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260322/auto/s3/aws4_request&X-Amz-Date=20260322T135410Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ddecfd47f669c05b10331809ca4125b8d14f5067e12a367fa73c1a27f384dfbb"
-    },
-    {
       "title": "Sarkaaye Lo Khatiya Episode 1",
       "upload_time": "6 Dy Ago",
       "duration": "26:00",
@@ -1306,6 +1297,15 @@
       "thumbnail": "https://hmaal.net/wp-content/uploads/2025/04/Sarkaaye-Lo-Khatiya-Episode-1.webp",
       "stream_type": "mp4",
       "stream_url": "https://cdn.bmaal.com/ULLU/Sarkaaye Lo Khatiya/Sarkaaye Lo Khatiya Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2/20260322/auto/s3/aws4_request&X-Amz-Date=20260322T125053Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=aec6c009762eb5fa3b4ccb07564a431da0a9663b5d2b7dcda88ecb35f797b5db"
+    },
+    {
+      "title": "Julie Maam ki Extra Class Episode 2",
+      "upload_time": "6 Dy Ago",
+      "duration": "27:00",
+      "page_url": "https://hmaal.net/julie-maam-ki-extra-class-episode-2/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Julie-Maam-ki-Extra-Class-Episode-2.webp",
+      "stream_type": "mp4",
+      "stream_url": "https://video.maalcdn.com/Wow Originals/Julie Maam ki Extra Class/Julie Maam ki Extra Class Episode 2aay.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260322/auto/s3/aws4_request&X-Amz-Date=20260322T135410Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ddecfd47f669c05b10331809ca4125b8d14f5067e12a367fa73c1a27f384dfbb"
     },
     {
       "title": "Biwi Ka Khat Episode 2",
@@ -1368,7 +1368,7 @@
       "page_url": "https://hmaal.net/kundi-mat-khadkao-raja-episode-3/",
       "thumbnail": "https://hmaal.net/wp-content/uploads/2025/03/Kundi-Mat-Khadkao-Raja-Episode-3.webp",
       "stream_type": "mp4",
-      "stream_url": "https://cdn.bmaal.com/ULLU/Kundi Mat Khadkao Raja D1/Kundi Mat Khadkao Raja Episode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2/20260322/auto/s3/aws4_request&X-Amz-Date=20260322T021011Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=465085f3b2ea5d83b142dfe15f6ef3b9beace0fb7bef249e0204e1b54665a452"
+      "stream_url": "https://cdn.bmaal.com/ULLU/Kundi Mat Khadkao Raja D1/Kundi Mat Khadkao Raja Episode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2/20260329/auto/s3/aws4_request&X-Amz-Date=20260329T022257Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0bba11c79ecc19fb79a051574b8bb6d6e5083a882e2895e2c1f394d4d47594b5"
     },
     {
       "title": "Biwi Ka Khat Episode 7",
@@ -1377,7 +1377,7 @@
       "page_url": "https://hmaal.net/biwi-ka-khat-episode-7/",
       "thumbnail": "https://hmaal.net/wp-content/uploads/2025/04/Biwi-Ka-Khat-Episode-7.webp",
       "stream_type": "mp4",
-      "stream_url": "https://cdn.bmaal.com/ULLU/Biwi Ka Khat/Biwi Ka Khat Episode 7.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2/20260322/auto/s3/aws4_request&X-Amz-Date=20260322T040009Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=88560ed833f531f940967aee6a1e810ba83e4098b9a12036250a9a6617bd963c"
+      "stream_url": "https://cdn.bmaal.com/ULLU/Biwi Ka Khat/Biwi Ka Khat Episode 7.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2/20260329/auto/s3/aws4_request&X-Amz-Date=20260329T035601Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c8fc6bc77dc1983141844cf320fdf6f7249635bac044e51052d7b58369dcac24"
     },
     {
       "title": "Kundi Mat Khadkao Raja Episode 2",
@@ -1395,7 +1395,7 @@
       "page_url": "https://hmaal.net/kundi-mat-khadkao-raja-episode-4/",
       "thumbnail": "https://hmaal.net/wp-content/uploads/2025/03/Kundi-Mat-Khadkao-Raja-Episode-4.webp",
       "stream_type": "mp4",
-      "stream_url": "https://cdn.bmaal.com/ULLU/Kundi Mat Khadkao Raja D1/Kundi Mat Khadkao Raja Episode 4.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2/20260321/auto/s3/aws4_request&X-Amz-Date=20260321T234145Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a4d322ec5b9396f0345c55d7830cef43b92e25a81853a3ece4bb9760aaa7fae2"
+      "stream_url": "https://cdn.bmaal.com/ULLU/Kundi Mat Khadkao Raja D1/Kundi Mat Khadkao Raja Episode 4.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T234931Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f19c000b4705c04bcab656c494a314f1310e6a81146fe25b7013cea26868ca5b"
     },
     {
       "title": "Biwi Ka Khat Episode 5",
@@ -1404,16 +1404,7 @@
       "page_url": "https://hmaal.net/biwi-ka-khat-episode-5/",
       "thumbnail": "https://hmaal.net/wp-content/uploads/2025/04/Biwi-Ka-Khat-Episode-5.webp",
       "stream_type": "mp4",
-      "stream_url": "https://cdn.bmaal.com/ULLU/Biwi Ka Khat/Biwi Ka Khat Episode 5.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2/20260321/auto/s3/aws4_request&X-Amz-Date=20260321T233541Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=30a33bba75a09d127afe1c1feea82447590e6c9757d35c8813ee2b924d40534d"
-    },
-    {
-      "title": "Hello Doctor Episode 2",
-      "upload_time": "6 Dy Ago",
-      "duration": "24:00",
-      "page_url": "https://hmaal.net/hello-doctor-episode-2/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Hello-Doctor-Episode-2.webp",
-      "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Wow Originals/Hello Doctor/Hello Doctor Episode 2.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260321/auto/s3/aws4_request&X-Amz-Date=20260321T225745Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8b1544374eda643f4b4c7b5d0334933d67c98c47e081e977cb5e865911676eb2"
+      "stream_url": "https://cdn.bmaal.com/ULLU/Biwi Ka Khat/Biwi Ka Khat Episode 5.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T233918Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6ea0535a718a78f3ce29c60af969871fc86fac7ddaa22499f9205e3886ad8c90"
     },
     {
       "title": "Biwi Ka Khat Episode 3",
@@ -1422,16 +1413,7 @@
       "page_url": "https://hmaal.net/biwi-ka-khat-episode-3/",
       "thumbnail": "https://hmaal.net/wp-content/uploads/2025/04/Biwi-Ka-Khat-Episode-3.webp",
       "stream_type": "mp4",
-      "stream_url": "https://cdn.bmaal.com/ULLU/Biwi Ka Khat/Biwi Ka Khat Episode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2/20260321/auto/s3/aws4_request&X-Amz-Date=20260321T193247Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9d2f3f1dce5ac6d8548a7b90f0816c0c9bfd1fdbefa75d8fc622d552c302e154"
-    },
-    {
-      "title": "Gaon Ki Malai Episode 1",
-      "upload_time": "6 Dy Ago",
-      "duration": "25:00",
-      "page_url": "https://hmaal.net/gaon-ki-malai-episode-1/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Gaon-Ki-Malai-Episode-1.webp",
-      "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Wow Originals/Gaon Ki Malai/Gaon Ki Malai Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260321/auto/s3/aws4_request&X-Amz-Date=20260321T200537Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=496bc0886914a82e583aa88d05abf97a67cdfcc475a90f4f800c30ad6aee5190"
+      "stream_url": "https://cdn.bmaal.com/ULLU/Biwi Ka Khat/Biwi Ka Khat Episode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T195852Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9cfe8b9c8b1ffb64432d95e59da1d4fb5f6a1fe3926479a4e4497bcafaaf9fb5"
     },
     {
       "title": "De De Pyaar De Dost Episode 7",
@@ -1440,25 +1422,7 @@
       "page_url": "https://hmaal.net/de-de-pyaar-de-dost-episode-7/",
       "thumbnail": "https://hmaal.net/wp-content/uploads/2025/06/De-De-Pyaar-De-Dost-Episode-7.webp",
       "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/ULLU/De De Pyaar De-D1/De De Pyaar De Episode 7.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260321/auto/s3/aws4_request&X-Amz-Date=20260321T175937Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=19514b46b298890b04cbc36161e82b63304f085b702c2e53c239676816855700"
-    },
-    {
-      "title": "Hello Doctor Episode 1",
-      "upload_time": "7 Dy Ago",
-      "duration": "20:00",
-      "page_url": "https://hmaal.net/hello-doctor-episode-1/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Hello-Doctor-Episode-1.webp",
-      "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Wow Originals/Hello Doctor/Hello Doctor Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260321/auto/s3/aws4_request&X-Amz-Date=20260321T183528Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3689b847593bc26c4bf548fd47288230dd859b59a7eff3d18b4db30947e886d8"
-    },
-    {
-      "title": "Tu Haan Kar Ya Naa Kar Episode 2",
-      "upload_time": "7 Dy Ago",
-      "duration": "25:00",
-      "page_url": "https://hmaal.net/tu-haan-kar-ya-naa-kar-episode-2/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/10/Tu-Haan-Kar-Ya-Naa-Kar-Episode-2.webp",
-      "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/ULLU/Tu Haan Kar Ya Naa Kar-D3/Tu Haan Kar Ya Naa Kar Episode 2.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260321/auto/s3/aws4_request&X-Amz-Date=20260321T164443Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f00efc3da683283fb4994bc3273f22fba502d7349ef63f3a9d5a92f0a65d3318"
+      "stream_url": "https://video.maalcdn.com/ULLU/De De Pyaar De-D1/De De Pyaar De Episode 7.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T175805Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7395c36759c9a06921fb286246f28a4828429f9398a9a2249382ee2c74f3bd11"
     },
     {
       "title": "Tu Haan Kar Ya Naa Kar Episode 3",
@@ -1467,7 +1431,43 @@
       "page_url": "https://hmaal.net/tu-haan-kar-ya-naa-kar-episode-3/",
       "thumbnail": "https://hmaal.net/wp-content/uploads/2025/10/Tu-Haan-Kar-Ya-Naa-Kar-Episode-3.webp",
       "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/ULLU/Tu Haan Kar Ya Naa Kar-D3/Tu Haan Kar Ya Naa Kar Episode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260321/auto/s3/aws4_request&X-Amz-Date=20260321T173822Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=09c013631f8f4d069518c16e2f415e0f852e5a1a25af0ed14b906382f105afa6"
+      "stream_url": "https://video.maalcdn.com/ULLU/Tu Haan Kar Ya Naa Kar-D3/Tu Haan Kar Ya Naa Kar Episode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T174133Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5cdbc39c8ea93bc5214272bb9c69a6d96e4dee439d49f96332ace88e273c179e"
+    },
+    {
+      "title": "Hello Doctor Episode 2",
+      "upload_time": "6 Dy Ago",
+      "duration": "24:00",
+      "page_url": "https://hmaal.net/hello-doctor-episode-2/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Hello-Doctor-Episode-2.webp",
+      "stream_type": "mp4",
+      "stream_url": "https://video.maalcdn.com/Wow Originals/Hello Doctor/Hello Doctor Episode 2.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T233126Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=efc26dc0c1ed7f3338b5b70ed1358fd65aa1612e0b16ad519a4b5facee628e6e"
+    },
+    {
+      "title": "Tu Haan Kar Ya Naa Kar Episode 2",
+      "upload_time": "7 Dy Ago",
+      "duration": "25:00",
+      "page_url": "https://hmaal.net/tu-haan-kar-ya-naa-kar-episode-2/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/10/Tu-Haan-Kar-Ya-Naa-Kar-Episode-2.webp",
+      "stream_type": "mp4",
+      "stream_url": "https://video.maalcdn.com/ULLU/Tu Haan Kar Ya Naa Kar-D3/Tu Haan Kar Ya Naa Kar Episode 2.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T170528Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a45159e8e81041dad808e9ad592a187a2a685a0e2d03bbcb6acdaaab81b182a2"
+    },
+    {
+      "title": "Gaon Ki Malai Episode 1",
+      "upload_time": "6 Dy Ago",
+      "duration": "25:00",
+      "page_url": "https://hmaal.net/gaon-ki-malai-episode-1/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Gaon-Ki-Malai-Episode-1.webp",
+      "stream_type": "mp4",
+      "stream_url": "https://video.maalcdn.com/Wow Originals/Gaon Ki Malai/Gaon Ki Malai Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T202009Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e115d3887f71a56cdf734a77cc8164358204de1d0b9116c0f8b1abaa1a0f40a7"
+    },
+    {
+      "title": "Hello Doctor Episode 1",
+      "upload_time": "7 Dy Ago",
+      "duration": "20:00",
+      "page_url": "https://hmaal.net/hello-doctor-episode-1/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Hello-Doctor-Episode-1.webp",
+      "stream_type": "mp4",
+      "stream_url": "https://video.maalcdn.com/Wow Originals/Hello Doctor/Hello Doctor Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T184851Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7b29de60ea0ede609621104759d757857ec236e06840756222dc8dd036f4a457"
     },
     {
       "title": "De De Pyaar De Dost Episode 3",
@@ -1476,7 +1476,7 @@
       "page_url": "https://hmaal.net/de-de-pyaar-de-dost-episode-3/",
       "thumbnail": "https://hmaal.net/wp-content/uploads/2025/06/De-De-Pyaar-De-Dost-Episode-3.webp",
       "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/ULLU/De De Pyaar De-D1/De De Pyaar De Episode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260321/auto/s3/aws4_request&X-Amz-Date=20260321T163828Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ade1d1430c22f31f64dd841b60dedb0b4682d2cbbae4e14c6328af6c54639553"
+      "stream_url": "https://video.maalcdn.com/ULLU/De De Pyaar De-D1/De De Pyaar De Episode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T175805Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fb158fc0fb694f098d1efe74dd7a947f6baccfe6167a02d014bbbacbf7b29e64"
     },
     {
       "title": "De De Pyaar De Dost Episode 5",
@@ -1485,16 +1485,7 @@
       "page_url": "https://hmaal.net/de-de-pyaar-de-dost-episode-5/",
       "thumbnail": "https://hmaal.net/wp-content/uploads/2025/06/De-De-Pyaar-De-Dost-Episode-5.webp",
       "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/ULLU/De De Pyaar De-D1/De De Pyaar De Episode 5.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260321/auto/s3/aws4_request&X-Amz-Date=20260321T155709Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0e761ce07faa532e2a941fa55b70d71699499dc99843d2ed8f515d396a7a35f3"
-    },
-    {
-      "title": "De De Pyaar De Dost Episode 6",
-      "upload_time": "7 Dy Ago",
-      "duration": "27:00",
-      "page_url": "https://hmaal.net/de-de-pyaar-de-dost-episode-6/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/06/De-De-Pyaar-De-Dost-Episode-6.webp",
-      "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/ULLU/De De Pyaar De-D1/De De Pyaar De Episode 6.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260321/auto/s3/aws4_request&X-Amz-Date=20260321T123928Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=af94d2d690efea56f658dcc4f8671331016d267db1c92b7a07e1ecdb95578634"
+      "stream_url": "https://video.maalcdn.com/ULLU/De De Pyaar De-D1/De De Pyaar De Episode 5.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T155233Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0c245f167a6846572c9199773b0522a9f8fafa80d9ef0e9423fcaa0fdd25cf6f"
     },
     {
       "title": "Tu Haan Kar Ya Naa Kar Episode 1",
@@ -1503,34 +1494,16 @@
       "page_url": "https://hmaal.net/tu-haan-kar-ya-naa-kar-episode-1/",
       "thumbnail": "https://hmaal.net/wp-content/uploads/2025/10/Tu-Haan-Kar-Ya-Naa-Kar-Episode-1.webp",
       "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/ULLU/Tu Haan Kar Ya Naa Kar-D3/Tu Haan Kar Ya Naa Kar Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260321/auto/s3/aws4_request&X-Amz-Date=20260321T132126Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ff56bc6dba61383be8c191a0fbad153d11fdeeda101147ea46638e988798d5b3"
+      "stream_url": "https://video.maalcdn.com/ULLU/Tu Haan Kar Ya Naa Kar-D3/Tu Haan Kar Ya Naa Kar Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T133449Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ffe9b9cebf26f3e05cf55a0578efc0b044f3021314ff7468a97b0efa0a470b5b"
     },
     {
-      "title": "Girls Hostel Episode 1",
+      "title": "De De Pyaar De Dost Episode 6",
       "upload_time": "7 Dy Ago",
-      "duration": "23:00",
-      "page_url": "https://hmaal.net/girls-hostel-episode-1/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Girls-Hostel-Episode-1.webp",
+      "duration": "27:00",
+      "page_url": "https://hmaal.net/de-de-pyaar-de-dost-episode-6/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/06/De-De-Pyaar-De-Dost-Episode-6.webp",
       "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Wow Originals/Girls Hostel/Girls Hostel Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260321/auto/s3/aws4_request&X-Amz-Date=20260321T081503Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d91c6d3f5532dcba8103dab4ac463bc0a5b8d5c25b7e7f91b5fb5dca9cdf4cbc"
-    },
-    {
-      "title": "Khel Khel Mein Episode 3",
-      "upload_time": "1 Wk Ago",
-      "duration": "29:00",
-      "page_url": "https://hmaal.net/khel-khel-mein-episode-3/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Khel-Khel-Mein-Episode-3.webp",
-      "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Rio Plus/Khel Khel Mein/Khel Khel Mein Episode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260321/auto/s3/aws4_request&X-Amz-Date=20260321T062226Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e18ae88e9b64e7f59faaaa47d835ff9e9183f436e40d7f662a7ee7863deae912"
-    },
-    {
-      "title": "Dirty Entertainer Episode 3",
-      "upload_time": "1 Wk Ago",
-      "duration": "19:00",
-      "page_url": "https://hmaal.net/dirty-entertainer-episode-3/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Dirty-Entertainer-Episode-3.webp",
-      "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Wow Originals/Dirty Entertainer/Dirty Entertainer Episode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260321/auto/s3/aws4_request&X-Amz-Date=20260321T054624Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d0e14afe705becd3802d5296b58d3dafec881e7b2ee82be49486ef7adfe9fef8"
+      "stream_url": "https://video.maalcdn.com/ULLU/De De Pyaar De-D1/De De Pyaar De Episode 6.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T140656Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=468796d4a4dbcd010e011cdf5321caf75cc9bdead85262b756feaecf7e92d053"
     },
     {
       "title": "Khel Khel Mein Episode 4",
@@ -1542,13 +1515,31 @@
       "stream_url": "https://video.maalcdn.com/Rio Plus/Khel Khel Mein/Khel Khel Mein Episode 4.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T050144Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=89e05835cbe2eadf357fc2a9d21fa8898ed1941c5157ca51bdea6cedc054a83d"
     },
     {
+      "title": "Girls Hostel Episode 1",
+      "upload_time": "7 Dy Ago",
+      "duration": "23:00",
+      "page_url": "https://hmaal.net/girls-hostel-episode-1/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Girls-Hostel-Episode-1.webp",
+      "stream_type": "mp4",
+      "stream_url": "https://video.maalcdn.com/Wow Originals/Girls Hostel/Girls Hostel Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T091025Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=29c22d0ba65ad5e40f68f87a83fed2ddf23f3c3aed931c878e82d37c62cd4f0d"
+    },
+    {
       "title": "Khel Khel Mein Episode 1",
       "upload_time": "1 Wk Ago",
       "duration": "15:00",
       "page_url": "https://hmaal.net/khel-khel-mein-episode-1/",
       "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Khel-Khel-Mein-Episode-1.webp",
       "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Rio Plus/Khel Khel Mein/Khel Khel Mein Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260321/auto/s3/aws4_request&X-Amz-Date=20260321T043838Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=96ac583871ebeabad32603fb10813ad0af88b0f597bd398065f516d601eddb5b"
+      "stream_url": "https://video.maalcdn.com/Rio Plus/Khel Khel Mein/Khel Khel Mein Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T043727Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d7ff388f25d4e756aa7d52e8e706c1c7facbe18a9c13116a211472a4dc3d0e7f"
+    },
+    {
+      "title": "Dirty Entertainer Episode 3",
+      "upload_time": "1 Wk Ago",
+      "duration": "19:00",
+      "page_url": "https://hmaal.net/dirty-entertainer-episode-3/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Dirty-Entertainer-Episode-3.webp",
+      "stream_type": "mp4",
+      "stream_url": "https://video.maalcdn.com/Wow Originals/Dirty Entertainer/Dirty Entertainer Episode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T054144Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a910b6b8cf4278f6716eacc3488665ddd852a01f36b5dc6ce1828da9da001ab6"
     },
     {
       "title": "Kaamwali Bai Episode 1",
@@ -1557,7 +1548,16 @@
       "page_url": "https://hmaal.net/kaamwali-bai-episode-1/",
       "thumbnail": "https://hmaal.net/wp-content/uploads/2024/11/Kaamwali-Bai-Episode-1.webp",
       "stream_type": "mp4",
-      "stream_url": "https://cdn.pmaal.com/ULLU/Kaamwali Bai/Kaamwali Bai Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T035014Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4f2fc0a8ec3b17cc4bd1805973cfbc70aa27d782a6e15644d989d4494186d8c0"
+      "stream_url": "https://cdn.pmaal.com/ULLU/Kaamwali Bai/Kaamwali Bai Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2/20260321/auto/s3/aws4_request&X-Amz-Date=20260321T035400Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=def2c3931084a280d17d5791b1ce21341f39e251cbeb798d19044e7c99c7f06c"
+    },
+    {
+      "title": "Khel Khel Mein Episode 3",
+      "upload_time": "1 Wk Ago",
+      "duration": "29:00",
+      "page_url": "https://hmaal.net/khel-khel-mein-episode-3/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Khel-Khel-Mein-Episode-3.webp",
+      "stream_type": "mp4",
+      "stream_url": "https://video.maalcdn.com/Rio Plus/Khel Khel Mein/Khel Khel Mein Episode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260328/auto/s3/aws4_request&X-Amz-Date=20260328T062042Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0b1a752d1333b7ca6f03de5c4044e66b05ddc6b31838ebe09d7ab63573ae9f3a"
     },
     {
       "title": "Girls Hostel Episode 2",
@@ -1605,15 +1605,6 @@
       "stream_url": "https://video.maalcdn.com/ULLU/De De Pyaar De-D1/De De Pyaar De Episode 2.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260327/auto/s3/aws4_request&X-Amz-Date=20260327T230725Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fec5f4026c1742890fb36bb4b04a4d8b53010fd268469a95d08bb90f9a5eefbf"
     },
     {
-      "title": "Complementary Massage Episode 3",
-      "upload_time": "1 Wk Ago",
-      "duration": "21:00",
-      "page_url": "https://hmaal.net/complementary-massage-episode-3/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Complementary-Massage-Episode-3.webp",
-      "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/Wow Originals/Complementary Massage/Complementary Massage Episode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260327/auto/s3/aws4_request&X-Amz-Date=20260327T232047Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b2021d594ce4b59268089a6a57f4f10ffb58f596cb8e81d2f0b2e5d11b3549b2"
-    },
-    {
       "title": "Jane Anjane Mein 3 Episode 1",
       "upload_time": "1 Wk Ago",
       "duration": "23:00",
@@ -1621,6 +1612,15 @@
       "thumbnail": "https://hmaal.net/wp-content/uploads/2024/11/Jane-Anjane-Mein-3-Episode-1.webp",
       "stream_type": "mp4",
       "stream_url": "https://cdn.pmaal.com/ULLU/Jane Anjane Mein 3/Jane Anjane Mein 3 Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2/20260327/auto/s3/aws4_request&X-Amz-Date=20260327T160655Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1bf6a0de193a092002ec0b50f86cce76b46ef05d7c497813367197f322abded8"
+    },
+    {
+      "title": "Complementary Massage Episode 3",
+      "upload_time": "1 Wk Ago",
+      "duration": "21:00",
+      "page_url": "https://hmaal.net/complementary-massage-episode-3/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2026/02/Complementary-Massage-Episode-3.webp",
+      "stream_type": "mp4",
+      "stream_url": "https://video.maalcdn.com/Wow Originals/Complementary Massage/Complementary Massage Episode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260327/auto/s3/aws4_request&X-Amz-Date=20260327T232047Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b2021d594ce4b59268089a6a57f4f10ffb58f596cb8e81d2f0b2e5d11b3549b2"
     },
     {
       "title": "Dirty Entertainer Episode 1",
@@ -1677,15 +1677,6 @@
       "stream_url": "https://video.maalcdn.com/ULLU/Jane Anjane Mein 7-D1/Jane Anjane Mein 7 Episode 3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260327/auto/s3/aws4_request&X-Amz-Date=20260327T142050Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=503c1478811b56a157d8f54eb510639a25199819e889287cd3e0e8967922f3f5"
     },
     {
-      "title": "Jane Anjane Mein 6 Episode 6",
-      "upload_time": "1 Wk Ago",
-      "duration": "27:00",
-      "page_url": "https://hmaal.net/jane-anjane-mein-6-episode-6/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/10/Jane-Anjane-Mein-6-Episode-6.webp",
-      "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/ULLU/Jane Anjane Mein 6-C7/Jane Anjane Mein 6 E6.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260327/auto/s3/aws4_request&X-Amz-Date=20260327T133757Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ffa4612deef122a44feb40df4735d9e9f84bd07b8348061c73c15259f8ff1a66"
-    },
-    {
       "title": "Jane Anjane Mein 7 Episode 1",
       "upload_time": "1 Wk Ago",
       "duration": "26:00",
@@ -1693,6 +1684,15 @@
       "thumbnail": "https://hmaal.net/wp-content/uploads/2025/10/Jane-Anjane-Mein-7-Episode-1.webp",
       "stream_type": "mp4",
       "stream_url": "https://video.maalcdn.com/ULLU/Jane Anjane Mein 7-D1/Jane Anjane Mein 7 Episode 1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260327/auto/s3/aws4_request&X-Amz-Date=20260327T133757Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8457239be8a0fce7dfa1508393ccdc5d750971d6c7cdfe5cf9ae06919acde189"
+    },
+    {
+      "title": "Jane Anjane Mein 6 Episode 6",
+      "upload_time": "1 Wk Ago",
+      "duration": "27:00",
+      "page_url": "https://hmaal.net/jane-anjane-mein-6-episode-6/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/10/Jane-Anjane-Mein-6-Episode-6.webp",
+      "stream_type": "mp4",
+      "stream_url": "https://video.maalcdn.com/ULLU/Jane Anjane Mein 6-C7/Jane Anjane Mein 6 E6.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260327/auto/s3/aws4_request&X-Amz-Date=20260327T133757Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ffa4612deef122a44feb40df4735d9e9f84bd07b8348061c73c15259f8ff1a66"
     },
     {
       "title": "Jane Anjane Mein 5 Episode 3",
@@ -1749,15 +1749,6 @@
       "stream_url": "https://video.maalcdn.com/ULLU/Do Din ka Mehmaan-D1/Do Din ka Mehmaan Episode 7.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260327/auto/s3/aws4_request&X-Amz-Date=20260327T080340Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9034602aec67771a37f6e715b28e6af181f734e84e290f644723f5e20b8ff6ff"
     },
     {
-      "title": "Do Din ka Mehmaan Episode 6",
-      "upload_time": "1 Wk Ago",
-      "duration": "24:00",
-      "page_url": "https://hmaal.net/do-din-ka-mehmaan-episode-6/",
-      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/11/Do-Din-ka-Mehmaan-Episode-6.webp",
-      "stream_type": "mp4",
-      "stream_url": "https://video.maalcdn.com/ULLU/Do Din ka Mehmaan-D1/Do Din ka Mehmaan Episode 6.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260327/auto/s3/aws4_request&X-Amz-Date=20260327T074623Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ee13bf462d17730172b38190bfc00e9d747d8e8ea205aa8080e854f6fcecf108"
-    },
-    {
       "title": "Jane Anjane Mein 6 Episode 3",
       "upload_time": "1 Wk Ago",
       "duration": "26:00",
@@ -1765,6 +1756,15 @@
       "thumbnail": "https://hmaal.net/wp-content/uploads/2025/10/Jane-Anjane-Mein-6-Episode-3.webp",
       "stream_type": "mp4",
       "stream_url": "https://video.maalcdn.com/ULLU/Jane Anjane Mein 6-C7/Jane Anjane Mein 6 E3.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260327/auto/s3/aws4_request&X-Amz-Date=20260327T062855Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=18e2b8ecea2faae3836b081337c9676d8c8c94b0b664b2f22034665a569cd6be"
+    },
+    {
+      "title": "Do Din ka Mehmaan Episode 6",
+      "upload_time": "1 Wk Ago",
+      "duration": "24:00",
+      "page_url": "https://hmaal.net/do-din-ka-mehmaan-episode-6/",
+      "thumbnail": "https://hmaal.net/wp-content/uploads/2025/11/Do-Din-ka-Mehmaan-Episode-6.webp",
+      "stream_type": "mp4",
+      "stream_url": "https://video.maalcdn.com/ULLU/Do Din ka Mehmaan-D1/Do Din ka Mehmaan Episode 6.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=809a68eb5f9a4d13e1b8b283b1fce3fe/20260327/auto/s3/aws4_request&X-Amz-Date=20260327T074623Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ee13bf462d17730172b38190bfc00e9d747d8e8ea205aa8080e854f6fcecf108"
     },
     {
       "title": "Jane Anjane Mein 6 Episode 5",
