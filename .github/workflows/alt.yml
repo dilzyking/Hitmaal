@@ -23,12 +23,12 @@ jobs:
           pip install requests beautifulsoup4
 
       - name: Run scraper
-        run: python ullu.py
+        run: python alt.py
 
       - name: Commit and Push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add ullu.json
-          git diff --cached --quiet || git commit -m "Auto update ullu.json"
+          git add alt.json
+          git diff --cached --quiet || git commit -m "Auto update alt.json"
           git push
