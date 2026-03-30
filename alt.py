@@ -16,7 +16,7 @@ from urllib.parse import urljoin
 # ==========================
 # CONFIG
 # ==========================
-BASE_URL = "https://hitmaal.co/ott/altt-d1/"
+BASE_URL = "https://hmaal.net/ott/altt/"
 JSON_FILE = "alt.json"
 
 HEADERS = {
