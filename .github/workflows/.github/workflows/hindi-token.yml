@@ -1,0 +1,65 @@
+name: Hindi Token Auto Update
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"   # every 15 minutes
+  workflow_dispatch:
+
+jobs:
+  update-token:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: 📦 Setup Git
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+
+      - name: 🔑 Load Existing Token
+        id: load_token
+        run: |
+          if [ -f hindi.json ]; then
+            TOKEN=$(grep -o '__hdnea__=[^"]*' hindi.json)
+          fi
+
+          if [ -z "$TOKEN" ]; then
+            echo "⚠️ No existing token, using fallback"
+            TOKEN="__hdnea__=st=1777175549~exp=1777197149~acl=/bpk-tv/Star_Sports_HD1_Hindi_BTS/WDVLive/*~hmac=bf8be27f135a0b37ed7f90e124d44799648290e715267df21341ac7e25bae147"
+          fi
+
+          echo "TOKEN=$TOKEN" >> $GITHUB_ENV
+
+      - name: 🌐 Fetch New Token
+        id: fetch_token
+        run: |
+          URL="https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Sports_HD1_Hindi_BTS/WDVLive/index.mpd"
+
+          echo "🕒 $(date)"
+          echo "➡️ Using token:"
+          echo "$TOKEN"
+
+          NEW_TOKEN=$(curl -s -D - "$URL?$TOKEN" \
+          -H "User-Agent: Mozilla/5.0" \
+          | grep -i set-cookie | grep __hdnea__ | sed -E 's/.*(__hdnea__=[^;]+).*/\1/')
+
+          if [ -n "$NEW_TOKEN" ]; then
+            echo "✅ New token received"
+          else
+            echo "❌ No new token, reusing old"
+            NEW_TOKEN="$TOKEN"
+          fi
+
+          echo "NEW_TOKEN=$NEW_TOKEN" >> $GITHUB_ENV
+
+      - name: 📝 Update hindi.json
+        run: |
+          echo "{ \"token\": \"$NEW_TOKEN\" }" > hindi.json
+
+      - name: 🚀 Commit & Push Changes
+        run: |
+          git add hindi.json
+          git commit -m "🔄 Auto update Hindi token $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+          git push
