@@ -1094,8 +1094,7 @@ footer {
     <a href="/category/exclusive" class="cat-chip"><i class="fas fa-gem"></i> Exclusive</a>
     <a href="/category/indian-web-series" class="cat-chip"><i class="fas fa-tv"></i> Indian Series</a>
   </nav>
-  <script async="async" data-cfasync="false" src="https://pl29338759.profitablecpmratenetwork.com/7a9aed631af8eba259f6df4d7a0d3b06/invoke.js"></script>
-<div id="container-7a9aed631af8eba259f6df4d7a0d3b06"></div>
+  
   
 
   <!-- ── VIDEO SECTION ─────────────────────────────────────── -->
@@ -1372,6 +1371,27 @@ fetch(API_URL)
       });
 
       grid.appendChild(card);
+      // INSERT AD AFTER EVERY 4 VIDEOS
+if ((i + 1) % 4 === 0) {
+
+  const adWrap = document.createElement("div");
+  adWrap.style.gridColumn = "1 / -1";
+  adWrap.style.textAlign = "center";
+  adWrap.style.margin = "10px 0 20px";
+
+  const script = document.createElement("script");
+  script.src = "https://pl29338759.profitablecpmratenetwork.com/7a9aed631af8eba259f6df4d7a0d3b06/invoke.js";
+  script.async = true;
+  script.setAttribute("data-cfasync", "false");
+
+  const container = document.createElement("div");
+  container.id = "container-7a9aed631af8eba259f6df4d7a0d3b06";
+
+  adWrap.appendChild(script);
+  adWrap.appendChild(container);
+
+  grid.appendChild(adWrap);
+}
 
       /* Staggered reveal via IntersectionObserver */
       observer.observe(card);
