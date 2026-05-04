@@ -1371,7 +1371,6 @@ fetch(API_URL)
       });
 
       grid.appendChild(card);
-      
       // INSERT AD AFTER EVERY 2 VIDEOS
 if ((i + 1) % 2 === 0) {
 
@@ -1381,10 +1380,11 @@ if ((i + 1) % 2 === 0) {
   adWrap.style.justifyContent = "center";
   adWrap.style.margin = "15px 0";
 
-  const script1 = document.createElement("script");
-  script1.innerHTML = `
+  // Script 1 (atOptions)
+  const s1 = document.createElement("script");
+  s1.innerHTML = `
     atOptions = {
-      'key' : '3ccd45065395270fbad9571f9e31a64a',
+      'key' : '3db1fe1f977ead052b0dd7c3b6ddb151',
       'format' : 'iframe',
       'height' : 250,
       'width' : 300,
@@ -1392,12 +1392,13 @@ if ((i + 1) % 2 === 0) {
     };
   `;
 
-  const script2 = document.createElement("script");
-  script2.src = "https://www.highperformanceformat.com/3ccd45065395270fbad9571f9e31a64a/invoke.js";
-  script2.async = true;
+  // Script 2 (invoke)
+  const s2 = document.createElement("script");
+  s2.src = "https://www.highperformanceformat.com/3db1fe1f977ead052b0dd7c3b6ddb151/invoke.js";
+  s2.async = true;
 
-  adWrap.appendChild(script1);
-  adWrap.appendChild(script2);
+  adWrap.appendChild(s1);
+  adWrap.appendChild(s2);
 
   grid.appendChild(adWrap);
 }
