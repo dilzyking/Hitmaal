@@ -1376,23 +1376,32 @@ if ((i + 1) % 4 === 0) {
 
   const adWrap = document.createElement("div");
   adWrap.style.gridColumn = "1 / -1";
-  adWrap.style.textAlign = "center";
-  adWrap.style.margin = "10px 0 20px";
+  adWrap.style.display = "flex";
+  adWrap.style.justifyContent = "center";
+  adWrap.style.margin = "15px 0";
 
-  const script = document.createElement("script");
-  script.src = "https://pl29338759.profitablecpmratenetwork.com/7a9aed631af8eba259f6df4d7a0d3b06/invoke.js";
-  script.async = true;
-  script.setAttribute("data-cfasync", "false");
+  // CREATE SCRIPT 1 (atOptions)
+  const script1 = document.createElement("script");
+  script1.innerHTML = `
+    atOptions = {
+      'key' : '3ccd45065395270fbad9571f9e31a64a',
+      'format' : 'iframe',
+      'height' : 600,
+      'width' : 160,
+      'params' : {}
+    };
+  `;
 
-  const container = document.createElement("div");
-  container.id = "container-7a9aed631af8eba259f6df4d7a0d3b06";
+  // CREATE SCRIPT 2 (invoke)
+  const script2 = document.createElement("script");
+  script2.src = "https://www.highperformanceformat.com/3ccd45065395270fbad9571f9e31a64a/invoke.js";
+  script2.async = true;
 
-  adWrap.appendChild(script);
-  adWrap.appendChild(container);
+  adWrap.appendChild(script1);
+  adWrap.appendChild(script2);
 
   grid.appendChild(adWrap);
 }
-
       /* Staggered reveal via IntersectionObserver */
       observer.observe(card);
     });
