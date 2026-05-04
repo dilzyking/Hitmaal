@@ -113,7 +113,105 @@ body {
 
 ::-webkit-scrollbar { width: 5px; background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: linear-gradient(180deg,#e02020,#9b1111); border-radius: 99px; }
+/* TELEGRAM POPUP */
+.tg-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease;
+}
 
+.tg-box {
+  background: linear-gradient(145deg, #120f14, #1a1520);
+  border: 1px solid rgba(220,38,38,0.4);
+  border-radius: 20px;
+  padding: 26px 22px;
+  text-align: center;
+  width: 90%;
+  max-width: 320px;
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.8),
+    0 0 30px rgba(220,38,38,0.3);
+  animation: scaleIn 0.35s cubic-bezier(0.23,1,0.32,1);
+}
+
+.tg-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 12px;
+  border-radius: 50%;
+  background: rgba(220,38,38,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: #e02020;
+  box-shadow: 0 0 20px rgba(220,38,38,0.4);
+}
+
+.tg-box h2 {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Syne', sans-serif;
+  margin-bottom: 6px;
+}
+
+.tg-box p {
+  font-size: 12px;
+  color: #aaa;
+  margin-bottom: 16px;
+}
+
+.tg-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.tg-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.tg-btn.join {
+  background: linear-gradient(135deg, #e02020, #9b1111);
+  color: #fff;
+  box-shadow: 0 0 15px rgba(220,38,38,0.5);
+}
+
+.tg-btn.join:hover {
+  transform: scale(1.05);
+}
+
+.tg-btn.joined {
+  background: #1f2937;
+  color: #ccc;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.tg-btn.joined:hover {
+  background: #374151;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+        }
 /* ─── HEADER ─────────────────────────────────────────── */
 .site-header {
   position: fixed;
@@ -759,7 +857,33 @@ document.addEventListener('visibilitychange', () => {
 
 initPlyr();
 fetchData();
-</script>
+  function closeTgPopup() {
+  document.getElementById("tgPopup").style.display = "none";
+}
 
+// ALWAYS SHOW ON REFRESH
+window.addEventListener("load", () => {
+  document.getElementById("tgPopup").style.display = "flex";
+});
+</script>
+<!-- TELEGRAM POPUP -->
+<div id="tgPopup" class="tg-popup">
+  <div class="tg-box">
+    <div class="tg-icon">
+      <i class="fab fa-telegram-plane"></i>
+    </div>
+    <h2>Join Our Telegram</h2>
+    <p>Get instant updates, new videos & exclusive content 🚀</p>
+
+    <div class="tg-actions">
+      <a href="https://t.me/+IwBYUqPbqkMzNzA1" target="_blank" class="tg-btn join">
+        Join Now
+      </a>
+      <button class="tg-btn joined" onclick="closeTgPopup()">
+        Joined
+      </button>
+    </div>
+  </div>
+</div>
 </body>
 </html>
