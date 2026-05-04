@@ -1371,8 +1371,9 @@ fetch(API_URL)
       });
 
       grid.appendChild(card);
-      // INSERT AD AFTER EVERY 4 VIDEOS
-if ((i + 1) % 4 === 0) {
+      
+      // INSERT AD AFTER EVERY 2 VIDEOS
+if ((i + 1) % 2 === 0) {
 
   const adWrap = document.createElement("div");
   adWrap.style.gridColumn = "1 / -1";
@@ -1380,19 +1381,17 @@ if ((i + 1) % 4 === 0) {
   adWrap.style.justifyContent = "center";
   adWrap.style.margin = "15px 0";
 
-  // CREATE SCRIPT 1 (atOptions)
   const script1 = document.createElement("script");
   script1.innerHTML = `
     atOptions = {
       'key' : '3ccd45065395270fbad9571f9e31a64a',
       'format' : 'iframe',
-      'height' : 600,
-      'width' : 160,
+      'height' : 250,
+      'width' : 300,
       'params' : {}
     };
   `;
 
-  // CREATE SCRIPT 2 (invoke)
   const script2 = document.createElement("script");
   script2.src = "https://www.highperformanceformat.com/3ccd45065395270fbad9571f9e31a64a/invoke.js";
   script2.async = true;
