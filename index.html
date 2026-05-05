@@ -1371,37 +1371,7 @@ fetch(API_URL)
       });
 
       grid.appendChild(card);
-      // INSERT AD AFTER EVERY 2 VIDEOS
-if ((i + 1) % 2 === 0) {
-
-  const adWrap = document.createElement("div");
-  adWrap.style.gridColumn = "1 / -1";
-  adWrap.style.display = "flex";
-  adWrap.style.justifyContent = "center";
-  adWrap.style.margin = "15px 0";
-
-  // Script 1 (atOptions)
-  const s1 = document.createElement("script");
-  s1.innerHTML = `
-    atOptions = {
-      'key' : '3db1fe1f977ead052b0dd7c3b6ddb151',
-      'format' : 'iframe',
-      'height' : 250,
-      'width' : 300,
-      'params' : {}
-    };
-  `;
-
-  // Script 2 (invoke)
-  const s2 = document.createElement("script");
-  s2.src = "https://www.highperformanceformat.com/3db1fe1f977ead052b0dd7c3b6ddb151/invoke.js";
-  s2.async = true;
-
-  adWrap.appendChild(s1);
-  adWrap.appendChild(s2);
-
-  grid.appendChild(adWrap);
-}
+      
       /* Staggered reveal via IntersectionObserver */
       observer.observe(card);
     });
