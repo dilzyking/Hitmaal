@@ -1,17 +1,407 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Popunder Test</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reel — Terabox Player</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.5.13/hls.min.js"></script>
+<style>
+  :root{
+    --bg: #14110d;
+    --bg-raised: #1c1812;
+    --line: #3a3226;
+    --amber: #e8a13c;
+    --amber-dim: #8a6a35;
+    --text: #ede6d8;
+    --text-dim: #a89b84;
+    --red: #c4553f;
+    --mono: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
+    --serif: 'Georgia', 'Iowan Old Style', serif;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:
+      radial-gradient(ellipse 900px 500px at 50% -10%, rgba(232,161,60,0.08), transparent 60%),
+      var(--bg);
+    color:var(--text);
+    font-family:var(--mono);
+    min-height:100vh;
+    padding:32px 16px 60px;
+  }
+  .wrap{max-width:860px;margin:0 auto;}
+
+  header{margin-bottom:28px;}
+  .brand{
+    display:flex;align-items:baseline;gap:10px;
+  }
+  .brand .mark{
+    font-family:var(--serif);
+    font-size:30px;
+    font-style:italic;
+    color:var(--amber);
+    letter-spacing:0.5px;
+  }
+  .brand .tag{
+    font-size:11px;
+    color:var(--text-dim);
+    letter-spacing:2px;
+    text-transform:uppercase;
+    border-left:1px solid var(--line);
+    padding-left:10px;
+  }
+
+  .pipeline{
+    margin-top:18px;
+    font-size:12px;
+    color:var(--text-dim);
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+    align-items:center;
+  }
+  .pipeline .node{
+    border:1px solid var(--line);
+    padding:3px 9px;
+    border-radius:3px;
+    background:var(--bg-raised);
+  }
+  .pipeline .node.active{
+    border-color:var(--amber-dim);
+    color:var(--amber);
+  }
+  .pipeline .arrow{color:var(--line);}
+
+  .panel{
+    background:var(--bg-raised);
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:20px;
+    margin-bottom:20px;
+  }
+
+  label{
+    display:block;
+    font-size:11px;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    color:var(--text-dim);
+    margin-bottom:8px;
+  }
+
+  .row{display:flex;gap:10px;}
+  input[type=text]{
+    flex:1;
+    background:#0f0d09;
+    border:1px solid var(--line);
+    color:var(--text);
+    font-family:var(--mono);
+    font-size:13px;
+    padding:12px 14px;
+    border-radius:4px;
+    outline:none;
+    transition:border-color .15s;
+  }
+  input[type=text]:focus{border-color:var(--amber-dim);}
+  input[type=text]::placeholder{color:#5a4f3f;}
+
+  button{
+    background:var(--amber);
+    color:#1c1005;
+    border:none;
+    font-family:var(--mono);
+    font-weight:700;
+    font-size:13px;
+    letter-spacing:0.5px;
+    padding:12px 20px;
+    border-radius:4px;
+    cursor:pointer;
+    transition:filter .15s, transform .05s;
+    white-space:nowrap;
+  }
+  button:hover{filter:brightness(1.1);}
+  button:active{transform:scale(0.97);}
+  button:disabled{
+    background:var(--line);
+    color:var(--text-dim);
+    cursor:not-allowed;
+  }
+
+  .hint{font-size:11px;color:var(--text-dim);margin-top:10px;line-height:1.6;}
+  .hint code{color:var(--amber-dim);}
+
+  .status{
+    font-size:12px;
+    margin-top:14px;
+    display:none;
+    align-items:center;
+    gap:8px;
+  }
+  .status.show{display:flex;}
+  .status.loading{color:var(--amber);}
+  .status.error{color:var(--red);}
+  .dot{
+    width:6px;height:6px;border-radius:50%;
+    background:currentColor;
+    animation:pulse 1s ease-in-out infinite;
+  }
+  @keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.2;}}
+
+  .player-panel{display:none;}
+  .player-panel.show{display:block;}
+
+  .stage{
+    position:relative;
+    background:#000;
+    border-radius:6px;
+    overflow:hidden;
+    aspect-ratio:16/9;
+    border:1px solid var(--line);
+  }
+  video{width:100%;height:100%;display:block;background:#000;}
+
+  .meta{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:16px;
+    margin-top:16px;
+    flex-wrap:wrap;
+  }
+  .meta .name{
+    font-family:var(--serif);
+    font-style:italic;
+    font-size:18px;
+    color:var(--text);
+    max-width:520px;
+  }
+  .meta .details{
+    font-size:11px;
+    color:var(--text-dim);
+    margin-top:6px;
+    display:flex;
+    gap:14px;
+  }
+  .meta .details span b{color:var(--amber-dim);font-weight:400;}
+
+  .qualities{
+    display:flex;gap:6px;flex-wrap:wrap;
+  }
+  .qbtn{
+    background:transparent;
+    border:1px solid var(--line);
+    color:var(--text-dim);
+    padding:6px 12px;
+    font-size:11px;
+    border-radius:3px;
+  }
+  .qbtn.active{
+    border-color:var(--amber);
+    color:var(--amber);
+  }
+
+  footer{
+    margin-top:36px;
+    font-size:11px;
+    color:#5a4f3f;
+    text-align:center;
+  }
+</style>
 </head>
 <body>
+<div class="wrap">
 
-<h1>Tap anywhere on this page</h1>
+  <header>
+    <div class="brand">
+      <span class="mark">Reel</span>
+      <span class="tag">Terabox Stream Resolver</span>
+    </div>
+    <div class="pipeline">
+      <span class="node" id="node-1">terabox link</span>
+      <span class="arrow">→</span>
+      <span class="node" id="node-2">teraplay worker</span>
+      <span class="arrow">→</span>
+      <span class="node" id="node-3">playtera.in/api/auto</span>
+      <span class="arrow">→</span>
+      <span class="node" id="node-4">.m3u8 stream</span>
+    </div>
+  </header>
 
-<script src="https://cdn.tsyndicate.com/sdk/v1/p.js"
-data-ts-spot="ce34e875fe9547f5ab5919ad1ad1cdc0"
-data-ts-devices="desktop,mobile,tablet"
-data-ts-delay="5"
-async defer></script>
+  <div class="panel">
+    <label for="url">Terabox share link</label>
+    <div class="row">
+      <input type="text" id="url" placeholder="https://terasharefile.com/s/1hqI9rRN1IAY4_tUEt0iONQ" />
+      <button id="go">Resolve &amp; Play</button>
+    </div>
+    <div class="hint">
+      Sent as <code id="workerBaseHint"></code>?url=&lt;your link, encoded&gt; — the worker calls playtera server-side.
+    </div>
+    <div class="status" id="status"><span class="dot"></span><span id="status-text"></span></div>
+  </div>
 
+  <div class="panel player-panel" id="playerPanel">
+    <div class="stage">
+      <video id="video" controls playsinline poster=""></video>
+    </div>
+    <div class="meta">
+      <div>
+        <div class="name" id="metaName">—</div>
+        <div class="details">
+          <span>Duration <b id="metaDuration">—</b></span>
+          <span>Size <b id="metaSize">—</b></span>
+          <span>Quality <b id="metaQuality">—</b></span>
+        </div>
+      </div>
+      <div class="qualities" id="qualities"></div>
+    </div>
+  </div>
+
+  <footer>Runs entirely in your browser · requests go straight from you to your worker</footer>
+</div>
+
+<script>
+// Your Cloudflare Worker — it calls playtera.in server-side and returns the JSON.
+const WORKER_BASE = "https://teraplay.freedekholive-577.workers.dev/?url=";
+
+document.getElementById('workerBaseHint').textContent = WORKER_BASE;
+
+const urlInput = document.getElementById('url');
+const goBtn = document.getElementById('go');
+const statusEl = document.getElementById('status');
+const statusText = document.getElementById('status-text');
+const playerPanel = document.getElementById('playerPanel');
+const video = document.getElementById('video');
+const metaName = document.getElementById('metaName');
+const metaDuration = document.getElementById('metaDuration');
+const metaSize = document.getElementById('metaSize');
+const metaQuality = document.getElementById('metaQuality');
+const qualitiesEl = document.getElementById('qualities');
+
+let hls = null;
+
+function setStatus(mode, text){
+  statusEl.className = 'status show ' + mode;
+  statusText.textContent = text;
+}
+function clearStatus(){
+  statusEl.className = 'status';
+}
+function setNodeActive(n){
+  for(let i=1;i<=4;i++){
+    document.getElementById('node-'+i).classList.toggle('active', i<=n);
+  }
+}
+
+function formatBytes(v){
+  const n = Number(v);
+  if(!n || isNaN(n)) return '—';
+  const units = ['B','KB','MB','GB'];
+  let i=0, num=n;
+  while(num>=1024 && i<units.length-1){ num/=1024; i++; }
+  return num.toFixed(num<10 && i>0 ? 1 : 0) + ' ' + units[i];
+}
+
+function buildRequestUrl(teraboxUrl){
+  return WORKER_BASE + encodeURIComponent(teraboxUrl);
+}
+
+function playStream(streamUrl){
+  if(hls){ hls.destroy(); hls = null; }
+  if(Hls.isSupported()){
+    hls = new Hls();
+    hls.loadSource(streamUrl);
+    hls.attachMedia(video);
+    hls.on(Hls.Events.ERROR, (evt, data) => {
+      if(data.fatal){
+        setStatus('error', 'Playback error: ' + data.type);
+      }
+    });
+  } else if(video.canPlayType('application/vnd.apple.mpegurl')){
+    video.src = streamUrl;
+  } else {
+    setStatus('error', 'This browser cannot play HLS (.m3u8) streams.');
+    return;
+  }
+  video.play().catch(()=>{});
+}
+
+function renderQualityButtons(fastStreamMap, defaultUrl){
+  qualitiesEl.innerHTML = '';
+  const entries = Object.entries(fastStreamMap || {});
+  if(entries.length === 0) return;
+  entries.forEach(([label, url]) => {
+    const b = document.createElement('button');
+    b.className = 'qbtn' + (url === defaultUrl ? ' active' : '');
+    b.textContent = label;
+    b.onclick = () => {
+      document.querySelectorAll('.qbtn').forEach(el => el.classList.remove('active'));
+      b.classList.add('active');
+      metaQuality.textContent = label;
+      playStream(url);
+    };
+    qualitiesEl.appendChild(b);
+  });
+}
+
+async function resolveAndPlay(){
+  const teraboxUrl = urlInput.value.trim();
+  if(!teraboxUrl){
+    setStatus('error', 'Paste a Terabox share link first.');
+    return;
+  }
+
+  goBtn.disabled = true;
+  playerPanel.classList.remove('show');
+  setNodeActive(1);
+  setStatus('loading', 'Building request…');
+
+  const requestUrl = buildRequestUrl(teraboxUrl);
+
+  try{
+    setNodeActive(2);
+    setStatus('loading', 'Calling your worker…');
+    const res = await fetch(requestUrl);
+    setNodeActive(3);
+    if(!res.ok){
+      let errMsg = 'HTTP ' + res.status;
+      try {
+        const errBody = await res.json();
+        if(errBody && errBody.error) errMsg = errBody.error;
+      } catch(_) {}
+      throw new Error(errMsg);
+    }
+    const data = await res.json();
+    setNodeActive(4);
+
+    const streamUrl = data.stream_url || (data.fast_stream_url && Object.values(data.fast_stream_url)[0]);
+    if(!streamUrl){
+      throw new Error('No stream_url in response.');
+    }
+
+    metaName.textContent = data.name || 'Untitled';
+    metaDuration.textContent = data.duration_formatted || '—';
+    metaSize.textContent = formatBytes(data.size_formatted);
+    metaQuality.textContent = data.quality || 'Auto';
+    if(data.thumbnail_url){
+      video.poster = data.thumbnail_url;
+    }
+
+    renderQualityButtons(data.fast_stream_url, streamUrl);
+    playerPanel.classList.add('show');
+    playStream(streamUrl);
+    clearStatus();
+  } catch(err){
+    setStatus('error', 'Failed: ' + err.message);
+    setNodeActive(0);
+  } finally {
+    goBtn.disabled = false;
+  }
+}
+
+goBtn.addEventListener('click', resolveAndPlay);
+urlInput.addEventListener('keydown', (e) => {
+  if(e.key === 'Enter') resolveAndPlay();
+});
+</script>
 </body>
 </html>
